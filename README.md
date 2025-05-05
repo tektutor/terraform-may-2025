@@ -16,3 +16,16 @@
 </pre>
 
 ![image](https://github.com/user-attachments/assets/1b8a1725-f14d-4b06-9b22-e2404e7fc30e)
+
+## Training Pre-requisities
+<pre>
+- Docker or any container technology basic working knowledge is expected
+- All of you are familiar with Git/GitHub related commands
+- Linux knowledge is assumed
+  - you are familiar with linux command line
+  - linux commands
+  - package manager
+  - ssh/scp
+  - installing/uninstalling/upgrading software
+- Basic CI/CD(DevOps knowledge) is assumed
+</pre>
