@@ -243,3 +243,17 @@ ssh-keygen
 
 Expected output
 ![image](https://github.com/user-attachments/assets/957fb7af-da04-4a52-af88-f7912476f194)
+
+## Lab - Build a custom ubuntu ansible node container image
+```
+cd ~/terraform-may-2025
+git pull
+cd Day1/ansible/CustomDockerImage/ubuntu
+cp ~/.ssh/id_ed25519.pub authorized_keys
+ls -l
+docker build -t tektutor/ubuntu-ansible-node:latest .
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/52c1309f-9aff-4975-95d7-1c7b68efbfcd)
+![image](https://github.com/user-attachments/assets/6d0e0d86-0b15-4a4d-8d5a-5650d22ef7cc)
