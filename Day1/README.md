@@ -226,8 +226,8 @@ sudo apt install ansible
 ```
 cd ~
 git clone https://github.com/tektutor/terraform-may-2025.git
-cd terraform-may-2025
 ls -l | grep terraform-may-2025
+cd terraform-may-2025
 ```
 
 Expected output
