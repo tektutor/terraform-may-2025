@@ -306,8 +306,11 @@ git pull
 cd Day1/ansible/StaticInventory
 cat hosts
 ansible -i hosts all -m ping
+ansible -i hosts ubuntu1 -m ping
+ansible -i hosts ubuntu2 -m ping
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/f341d443-6efc-4220-9dc7-88eadee4e3e9)
 ![image](https://github.com/user-attachments/assets/6bf6a7f7-9ad7-424a-b606-960b18deb7de)
+![image](https://github.com/user-attachments/assets/3305d96d-2f63-424e-9759-e631a1382ca1)
