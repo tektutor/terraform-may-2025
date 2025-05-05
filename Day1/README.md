@@ -1,6 +1,7 @@
 # Day 1
 
-## Info - Dual/multi booting
+## Info - Dual/multi booting  - dynamic inventory ( python script )
+
 <pre>
 - let's say you already have windows OS installed on your laptop, for R&D purpose you need some Linux OS
 - you could use Boot Loader utilities like LILO(deprecated/outdated), GRUB, BootCamp(Mac)
@@ -26,7 +27,8 @@
     - Parallels (Mac OS-X)
     - VMWare Fusion(Mac OS-X)
     - VMWare Workstation ( Windows & Linux )
-    - Microsoft Hyper-V
+    - Microsoft Hyper-V  - dynamic inventory ( python script )
+
 - this type of virtualization is called heavy-weight
   - for each Virtual Machine(VM) we need to allocated dedicated hardware resources
     - CPU Cores
@@ -171,3 +173,15 @@ sudo apt install ansible
   - to automate configuration management on  windows ansible nodes, ansible supports modules written in Powershell script
   - to perform configuration management on unix/linux/mac ansible nodes, ansible supports modules written in Python
 </pre>
+
+## Lab - Cloning the training repository on your RPS Cloud Lab machine ( From the Ubuntu terminal )
+```
+cd ~
+git clone https://github.com/tektutor/terraform-may-2025.git
+cd terraform-may-2025
+ls -l | grep terraform-may-2025
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/d3187df3-dac5-4604-8846-609f6e02ac65)
+![image](https://github.com/user-attachments/assets/280df926-e57e-42a3-bdf5-7fd30032f16c)
