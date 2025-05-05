@@ -58,7 +58,7 @@
 - examples
   - Docker, Podman, containerd, etc
 </pre>
-
+Commands
 ## Info - Container Engine
 <pre>
 - is a high-level software that helps managing container images and containers
@@ -145,3 +145,29 @@ sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt install ansible
 ```
 
+## Info - Ansible Inventory
+<pre>
+- is a text file with no extension
+- technically, the file name can be anything but as a best practice name it either hosts or inventory
+- any plain text editor can be used to create the inventory file
+- it captures the ansible node(remote servers) connectivity details
+- there are 2 types of inventory
+  - static inventory ( text file )
+  - dynamic inventory ( python script )
+</pre>
+
+## Info - Ansible Module
+<pre>
+- ansible comes out of the box with many ansible modules
+- each ansible modules automates one functionality
+- for instance, 
+  - copy module - helps in copying a file from local machine to the ansible node or vice versa
+  - file module - helps in creating a file/directory on the remote machine with specific permissions
+  - service module - helps in managing service 
+    - start a service
+    - enable/disable a service
+    - restart/reload a service
+- ansible modules are implemented either as Python scripts or as Powershell scripts
+  - to automate configuration management on  windows ansible nodes, ansible supports modules written in Powershell script
+  - to perform configuration management on unix/linux/mac ansible nodes, ansible supports modules written in Python
+</pre>
