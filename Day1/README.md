@@ -335,3 +335,19 @@ ansible -i hosts all -m shell -a "hostname"
 
 Expected output
 ![image](https://github.com/user-attachments/assets/0e576a50-5cc6-4a0f-9e1e-5153f12b18a9)
+
+## Lab - Finding list of modules supported by ansible
+```
+ansible-doc -l
+ansible-doc shell
+ansible-doc setup
+ansible-doc ping
+ansible-doc apt
+```
+
+Expected ouput
+![image](https://github.com/user-attachments/assets/52632b0d-553d-4415-95b4-b408e521fda6)
+![image](https://github.com/user-attachments/assets/56710e12-5fcb-40dc-a4bd-eb29c1519bd1)
+![image](https://github.com/user-attachments/assets/5926f811-9ef4-4cf3-9ab6-ba20ce3766e8)
+![image](https://github.com/user-attachments/assets/d80a3ba9-d103-4aa2-8243-114ea924edb6)
+![image](https://github.com/user-attachments/assets/da5b378c-65db-4b8b-aae2-2ac37253e109)
