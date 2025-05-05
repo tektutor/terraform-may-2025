@@ -310,6 +310,15 @@ ansible -i hosts ubuntu1 -m ping
 ansible -i hosts ubuntu2 -m ping
 ```
 
+In the above ansible ping command
+<pre>
+i - switch that tells what follows is the name of the inventory file
+hosts - is the name of inventory file
+all - is the group in the inventory file
+m - ansible module
+ping - is the name of the ansible module you wish to run using this ansible ad-hoc command
+</pre>
+
 Expected output
 ![image](https://github.com/user-attachments/assets/f341d443-6efc-4220-9dc7-88eadee4e3e9)
 ![image](https://github.com/user-attachments/assets/6bf6a7f7-9ad7-424a-b606-960b18deb7de)
