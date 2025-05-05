@@ -315,7 +315,7 @@ In the above ansible ping command
 i - switch that tells what follows is the name of the inventory file
 hosts - is the name of inventory file
 all - is the group in the inventory file
-m - ansible module
+m - switch that mentions the ansible module you wish to run
 ping - is the name of the ansible module you wish to run using this ansible ad-hoc command
 </pre>
 
