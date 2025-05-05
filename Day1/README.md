@@ -257,3 +257,17 @@ docker build -t tektutor/ubuntu-ansible-node:latest .
 Expected output
 ![image](https://github.com/user-attachments/assets/52c1309f-9aff-4975-95d7-1c7b68efbfcd)
 ![image](https://github.com/user-attachments/assets/6d0e0d86-0b15-4a4d-8d5a-5650d22ef7cc)
+
+## Lab - Create couple of docker containers using the custom docker image we created
+Create two containers
+```
+docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:latest
+docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ubuntu-ansible-node:latest
+```
+List the running containers
+```
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/6055fffd-4c49-4687-8a19-9362f1121bd9)
