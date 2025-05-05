@@ -136,3 +136,12 @@
     - hence supports all the features of AWX
     - you get world-wide support from Red Hat ( an IBM company )
 </pre>
+
+## Info - Installing Ansible core in Ubuntu ( Just for your reference - you don't have to do this in lab machine )
+```
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+```
+
