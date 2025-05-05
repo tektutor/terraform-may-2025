@@ -5,7 +5,7 @@
 - Always use your personal email-id for a test registrations ( don't use your BOFA id )
 - Copy/Paste is disabled as per your Bank policy
 - For any lab issues, please feel free to reach out to "RPS Consulting PVT Ltd" user in the WebEx chat. In case, the problem isn't resolved for longer time do let me know
-- Kindly make sure you're connecting to the new cloud machine link ( Not the demo link )
+- Kindly make sure you're connecting to the new cloud machine link shared by Ravi ( Not the older demo link )
 </pre>
 
 ## Pre-test
