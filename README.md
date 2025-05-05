@@ -29,3 +29,7 @@
   - installing/uninstalling/upgrading software
 - Basic CI/CD(DevOps knowledge) is assumed
 </pre>
+
+## References
+Docker commands
+https://medium.com/@jegan_50867/docker-commands-ba19387383b4
