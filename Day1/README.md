@@ -283,3 +283,17 @@ docker ps
 
 Expected output
 ![image](https://github.com/user-attachments/assets/6055fffd-4c49-4687-8a19-9362f1121bd9)
+
+## Lab - Let's verify if we are able to SSH into the ubuntu1 and ubuntu2 containers without providing password
+```
+cd ~
+ssh -p 2001 root@localhost
+exit
+
+ssh -p 2002 root@localhost
+exit
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/0ff0a5c2-391a-4e5d-bdb0-f0567e390d45)
+![image](https://github.com/user-attachments/assets/b29e66f6-cec5-4470-b617-1fcac031c9c7)
