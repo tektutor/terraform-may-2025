@@ -129,6 +129,14 @@ Commands
   - CRI-O is a container runtime
 </pre>
 
+## Linux Distributions
+<pre>
+- Ubuntu Linux Distribution
+- Fedora Linux Distribution
+- Red Hat Enterprise Linux Distribution
+
+</pre>  
+
 ## Info - Configuration Management
 <pre>
 - helps in automating all the system administration activities
@@ -367,3 +375,21 @@ Expected ouputt
 ![image](https://github.com/user-attachments/assets/6a2ffd91-9ad9-4b9a-b088-faae8c9fd690)
 
 In the above output, you can observe that the first task in each Play seems to report "Gathering Facts".  There is a module named "setup" in ansible which gets invoked automatically as the very first task in each play by default.  The ansible facts can be used to execute certain tasks conditionally.  For example, if you have multiple servers with different OS but wanted to apply some service packs only one server that has Windows 2022 OS, you could use ansible facts to identify such servers and conditionally run certain tasks.
+
+## Lab - Running install nginx playbook
+```
+cd ~/terraform-may-2025
+git pull
+cd Day1/ansible/playbooks
+cat ansible.cfg
+ansible-playbook install-nginx-playbook.yml
+curl http://localhost:8001
+curl http://localhost:8002
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/21304d8b-ad78-44a3-87f9-7a5cd8032125)
+![image](https://github.com/user-attachments/assets/e964cae9-03c7-4708-89df-eef5a6bea3d5)
+![image](https://github.com/user-attachments/assets/cba0933e-2034-44ad-b3db-45f00c7ea97c)
+![image](https://github.com/user-attachments/assets/9dd90023-e054-4651-89ee-f42c5b473073)
+![image](https://github.com/user-attachments/assets/f6b801b4-16f4-4fef-a6f0-c147884d11d5)
