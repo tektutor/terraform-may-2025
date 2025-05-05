@@ -310,3 +310,4 @@ ansible -i hosts all -m ping
 
 Expected output
 ![image](https://github.com/user-attachments/assets/f341d443-6efc-4220-9dc7-88eadee4e3e9)
+![image](https://github.com/user-attachments/assets/6bf6a7f7-9ad7-424a-b606-960b18deb7de)
