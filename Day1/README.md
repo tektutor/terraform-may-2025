@@ -104,6 +104,12 @@
 <pre>
 - opensource
 - developed by Michael Deehan ( former employee of Red Hat )
+- is developed in Python language
+- is agent-less
+- follows PUSH based architecture
+- Domain Specific Language (DSL)
+  - the language in which automation code is written
+  - YAML in case of Ansible
 - Michael Deehan left Red Hat and founded a company called Ansible Inc, developed Ansible Core as an opensource project
 - comes in 3 flavours
   - Ansible Core
