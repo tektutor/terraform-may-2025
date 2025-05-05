@@ -15,3 +15,5 @@
 - Once you are done with the pre-test, kindly leave a message via chat or let me know if you don't have access to webex chat
 - Once everyone completes the pre-test, we will proceed with the training
 </pre>
+
+![image](https://github.com/user-attachments/assets/1b8a1725-f14d-4b06-9b22-e2404e7fc30e)
