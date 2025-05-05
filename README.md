@@ -33,3 +33,5 @@
 ## References
 Docker commands
 https://medium.com/@jegan_50867/docker-commands-ba19387383b4
+https://www.youtube.com/watch?v=sZvla1AWodw
+https://www.youtube.com/watch?v=7XpBvRA3drY
