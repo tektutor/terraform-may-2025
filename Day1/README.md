@@ -42,7 +42,6 @@
 - each VM represents one Operating System
 </pre>
 
-
 ## Info - Containerization
 <pre>
 - light-weight application virtualization technology
@@ -55,4 +54,48 @@
   - just like each VM get's it own IP address, each container gets its own IP address 
   - just like each VM has its own Network card, each container has its own network card
   - just like each VM has its own file system, each container has its own file system
+  - just like each VM has its own port range, each container has its own port range 0-65535 ports
+- examples
+  - Docker, Podman, containerd, etc
+</pre>
+
+## Info - Container Engine
+<pre>
+- is a high-level software that helps managing container images and containers
+- is very user-friendly
+- container engines internally depends on Container Runtimes to manage images and containers
+- examples
+  - Docker Container Engine depends on containerd which in turn depends on runC container runtime
+  - Podman Container Engine depends on CRI-O container runtime
+</pre>  
+
+## Info - Container Runtime
+<pre>
+- is a low-level software that helps managing container images and containers
+- is not so user-friendly, hence normally no end-user use this
+- examples
+  - runC is a container runtime
+  - CRI-O is a container runtime
+</pre>
+
+## Info - Configuration Management
+<pre>
+- helps in automating all the system administration activities
+- if you already have machine with OS pre-installed, you could use configuration management tools
+  - to install/uninstall/upgrade softwares into that machine
+  - the machine where the automation is done is called nodes ( Unix, Linux,Mac, Windows, Network Switches/Routers, etc., )
+- examples
+  - Ansible
+  - Puppet
+  - Chef
+  - Salt/Saltstack ( almost dead )
+</pre>
+
+## Info - Provisioners
+<pre>
+- these tools helps us create a virtual machine in your data center, private/public cloud ( AWS, Azure, GCP, Digital Ocean etc., )
+- examples
+  - Docker
+  - AWS Cloudformation ( only supports automating infrastructure in AWS environment )
+  - Terraform ( Cloud newtral, works locally or in public/private/hybrid cloud )
 </pre>
