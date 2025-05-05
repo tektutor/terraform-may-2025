@@ -306,7 +306,59 @@ git pull
 cd Day1/ansible/StaticInventory
 cat hosts
 ansible -i hosts all -m ping
+ansible -i hosts ubuntu1 -m ping
+ansible -i hosts ubuntu2 -m ping
 ```
+
+In the above ansible ping command
+<pre>
+i - switch that tells what follows is the name of the inventory file
+hosts - is the name of inventory file
+all - is the group in the inventory file
+m - switch that mentions the ansible module you wish to run
+ping - is the name of the ansible module you wish to run using this ansible ad-hoc command
+</pre>
 
 Expected output
 ![image](https://github.com/user-attachments/assets/f341d443-6efc-4220-9dc7-88eadee4e3e9)
+![image](https://github.com/user-attachments/assets/6bf6a7f7-9ad7-424a-b606-960b18deb7de)
+![image](https://github.com/user-attachments/assets/3305d96d-2f63-424e-9759-e631a1382ca1)
+
+## Lab - Using shell module in ansible ad-hoc command
+```
+cd ~/terraform-may-2025
+git pull
+cd Day1/ansible/StaticInventory
+ansible -i hosts all -m shell -a "hostname -i"
+ansible -i hosts all -m shell -a "hostname"
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/0e576a50-5cc6-4a0f-9e1e-5153f12b18a9)
+
+## Lab - Finding list of modules supported by ansible
+```
+ansible-doc -l
+ansible-doc shell
+ansible-doc setup
+ansible-doc ping
+ansible-doc apt
+```
+
+Expected ouput
+![image](https://github.com/user-attachments/assets/52632b0d-553d-4415-95b4-b408e521fda6)
+![image](https://github.com/user-attachments/assets/56710e12-5fcb-40dc-a4bd-eb29c1519bd1)
+![image](https://github.com/user-attachments/assets/5926f811-9ef4-4cf3-9ab6-ba20ce3766e8)
+![image](https://github.com/user-attachments/assets/d80a3ba9-d103-4aa2-8243-114ea924edb6)
+![image](https://github.com/user-attachments/assets/da5b378c-65db-4b8b-aae2-2ac37253e109)
+
+## Lab - Running your first ansible playbook
+```
+cd ~/terraform-may-2025
+git pull
+cd Day1/ansible/playbooks
+ansible-playbook -i hosts ping-playbook.yml
+```
+
+Expected ouputt
+![image](https://github.com/user-attachments/assets/6a2ffd91-9ad9-4b9a-b088-faae8c9fd690)
