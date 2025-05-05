@@ -264,10 +264,22 @@ Create two containers
 docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:latest
 docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ubuntu-ansible-node:latest
 ```
+In the above command
+<pre>
+run - create a new container and starts it
+d - starts the container in the background as a daemon
+name - assigns an user friendly name to the container
+hostname - assigns an user friendly hostname to the container
+p - port forward 2001 on the local machine to the port 22 on the ubuntu1 container ( SSH server listens on port 22 by default )
+p - port forward 8001 on the local machine to the port 80 on the ubuntu1 container ( nginx web server listens on port 80 by default )
+tektutor/ubuntu-ansible-node:latest - is the name of the docker image ( tektutor - is the company name, this naming convention is a industry best practice )
+</pre>
+
 List the running containers
 ```
 docker ps
 ```
+
 
 Expected output
 ![image](https://github.com/user-attachments/assets/6055fffd-4c49-4687-8a19-9362f1121bd9)
