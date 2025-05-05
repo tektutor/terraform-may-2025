@@ -1,5 +1,8 @@
 # Day 1
 
+## Please share your first day feedback
+https://survey.zohopublic.com/zs/XuagEu
+
 ## Info - Dual/multi booting  - dynamic inventory ( python script )
 
 <pre>
