@@ -110,6 +110,7 @@ CMD ["/usr/sbin/sshd", "-D"]
   - Docker, Podman, containerd, etc
 </pre>
 Commands
+
 ## Info - Container Engine
 <pre>
 - is a high-level software that helps managing container images and containers
@@ -195,6 +196,9 @@ Commands
     - hence supports all the features of AWX
     - you get world-wide support from Red Hat ( an IBM company )
 </pre>
+
+## Info - Ansible High Level Architecture
+![ansible](AnsibleHighLevelArchitecture.png)
 
 ## Info - Installing Ansible core in Ubuntu ( Just for your reference - you don't have to do this in lab machine )
 ```
