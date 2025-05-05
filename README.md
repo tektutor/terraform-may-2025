@@ -8,8 +8,7 @@
 - Kindly make sure you're connecting to the new cloud machine link shared by Ravi ( Not the older demo link )
 </pre>
 
-## Pre-test
-<pre>
+## Complete your Pre-test 
 - Login to your RPS cloud machine with the credentials you received on your official training invite
 - On the Lab machine Desktop, you will find an excel sheet with the pre-test url and your pre-test login credentials
 - Once you are done with the pre-test, kindly leave a message via chat or let me know if you don't have access to webex chat
