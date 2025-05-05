@@ -4,6 +4,7 @@
 <pre>
 - Always use your personal email-id for a test registrations ( don't use your BOFA id )
 - Copy/Paste is disabled as per your Bank policy
+- For any lab issues, please feel free to reach out to "RPS Consulting PVT Ltd" user in the WebEx chat. In case, the problem isn't resolved for longer time do let me know
 </pre>
 
 ## Pre-test
