@@ -8,7 +8,55 @@
 - Master Boot Record(MBR - Hard Disk - Byte 0 Sector 0) - 512 bytes
   - Boot Loader software is installed in the MBR 
 - When we power on a machine, BIOS will perform POST (Power On Self Test)
-  - BIOS will instruct the CPU to launch the Boot Loader software residing in MBR
+  - BIOS will instruct the CPU to launch the Boot Loader software residing in MBRFROM ubuntu:16.04
+MAINTAINER Jeganathan Swaminathan <jegan@tektutor.org>
+
+RUN apt-get update && apt-get install -y openssh-server python3
+RUN mkdir /var/run/sshd
+RUN echo 'root:root' | chpasswd
+RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+# SSH login fix. Otherwise user is kicked off after login
+RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
+
+RUN mkdir -p /root/.ssh
+COPY authorized_keys /root/.ssh/authorized_keys
+
+EXPOSE 22
+EXPOSE 80 
+CMD ["/usr/sbin/sshd", "-D"]FROM ubuntu:16.04
+MAINTAINER Jeganathan Swaminathan <jegan@tektutor.org>
+
+RUN apt-get update && apt-get install -y openssh-server python3
+RUN mkdir /var/run/sshd
+RUN echo 'root:root' | chpasswd
+RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+# SSH login fix. Otherwise user is kicked off after login
+RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
+
+RUN mkdir -p /root/.ssh
+COPY authorized_keys /root/.ssh/authorized_keys
+
+EXPOSE 22
+EXPOSE 80 
+CMD ["/usr/sbin/sshd", "-D"]FROM ubuntu:16.04
+MAINTAINER Jeganathan Swaminathan <jegan@tektutor.org>
+
+RUN apt-get update && apt-get install -y openssh-server python3
+RUN mkdir /var/run/sshd
+RUN echo 'root:root' | chpasswd
+RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+# SSH login fix. Otherwise user is kicked off after login
+RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
+
+RUN mkdir -p /root/.ssh
+COPY authorized_keys /root/.ssh/authorized_keys
+
+EXPOSE 22
+EXPOSE 80 
+CMD ["/usr/sbin/sshd", "-D"]
   - Boot Loader then scans all your hard disks looking for Operating Systems, if it finds more than one OS, it gives a menu for you to choose between those OS
 - though more than one OS is installed on your system, only one can be actively running at any point of time
 </pre>  
@@ -185,3 +233,13 @@ ls -l | grep terraform-may-2025
 Expected output
 ![image](https://github.com/user-attachments/assets/d3187df3-dac5-4604-8846-609f6e02ac65)
 ![image](https://github.com/user-attachments/assets/280df926-e57e-42a3-bdf5-7fd30032f16c)
+
+## Lab - Generating key pair for SSH Login authenication into the ansible nodes
+
+Let's accept all defaults, by hitting enter when it prompts for anything 
+```
+ssh-keygen
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/957fb7af-da04-4a52-af88-f7912476f194)
