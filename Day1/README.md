@@ -365,3 +365,5 @@ ansible-playbook -i hosts ping-playbook.yml
 
 Expected ouputt
 ![image](https://github.com/user-attachments/assets/6a2ffd91-9ad9-4b9a-b088-faae8c9fd690)
+
+In the above output, you can observe that the first task in each Play seems to report "Gathering Facts".  There is a module named "setup" in ansible which gets invoked automatically as the very first task in each play by default.  The ansible facts can be used to execute certain tasks conditionally.  For example, if you have multiple servers with different OS but wanted to apply some service packs only one server that has Windows 2022 OS, you could use ansible facts to identify such servers and conditionally run certain tasks.
