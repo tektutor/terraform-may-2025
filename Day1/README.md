@@ -105,7 +105,7 @@
 - opensource
 - developed by Michael Deehan ( former employee of Red Hat )
 - Michael Deehan left Red Hat and founded a company called Ansible Inc, developed Ansible Core as an opensource project
-- comes in 2 flavours
+- comes in 3 flavours
   - Ansible Core
     - open source
     - command-line linux tool
@@ -119,5 +119,14 @@
       - an Azure VM 
       - a physical server with Windows/Unix/Linux/Mac
       - Network Switch/Router
+  - AWX
+    - opensource
+    - developed on top of Ansible Core
+    - supports web-interface
+    - you don't get any support from any organization in case you are struck with some issues in AWX
   - Ansible Tower ( these days called as Ansible Automation Platform )
+    - an enterprise product from Red Hat
+    - is developed on top of opensource AWX
+    - hence supports all the features of AWX
+    - you get world-wide support from Red Hat ( an IBM company )
 </pre>
