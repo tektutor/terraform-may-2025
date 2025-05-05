@@ -99,3 +99,25 @@
   - AWS Cloudformation ( only supports automating infrastructure in AWS environment )
   - Terraform ( Cloud newtral, works locally or in public/private/hybrid cloud )
 </pre>
+
+## Info - Ansible Configuration Management Tool
+<pre>
+- opensource
+- developed by Michael Deehan ( former employee of Red Hat )
+- Michael Deehan left Red Hat and founded a company called Ansible Inc, developed Ansible Core as an opensource project
+- comes in 2 flavours
+  - Ansible Core
+    - open source
+    - command-line linux tool
+    - though Ansible core can only be installed in Linux Distributions it can manage servers with any OS (  Windows, Mac, Unix, Linux, etc )
+    - the machine where Ansible is installed is called Ansible Controller Machine
+    - the machine where the automation is performed is called Ansible Node
+    - Ansible Node ( Remote Servers )
+      - can be a container
+      - a local virtual machine
+      - an ec2 instance running on AWS
+      - an Azure VM 
+      - a physical server with Windows/Unix/Linux/Mac
+      - Network Switch/Router
+  - Ansible Tower ( these days called as Ansible Automation Platform )
+</pre>
