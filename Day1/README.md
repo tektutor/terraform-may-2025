@@ -323,3 +323,15 @@ Expected output
 ![image](https://github.com/user-attachments/assets/f341d443-6efc-4220-9dc7-88eadee4e3e9)
 ![image](https://github.com/user-attachments/assets/6bf6a7f7-9ad7-424a-b606-960b18deb7de)
 ![image](https://github.com/user-attachments/assets/3305d96d-2f63-424e-9759-e631a1382ca1)
+
+## Lab - Using shell module in ansible ad-hoc command
+```
+cd ~/terraform-may-2025
+git pull
+cd Day1/ansible/StaticInventory
+ansible -i hosts all -m shell -a "hostname -i"
+ansible -i hosts all -m shell -a "hostname"
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/0e576a50-5cc6-4a0f-9e1e-5153f12b18a9)
