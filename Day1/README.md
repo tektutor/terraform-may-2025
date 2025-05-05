@@ -10,6 +10,7 @@
 - When we power on a machine, BIOS will perform POST (Power On Self Test)
   - BIOS will instruct the CPU to launch the Boot Loader software residing in MBRFROM ubuntu:16.04
 MAINTAINER Jeganathan Swaminathan <jegan@tektutor.org>
+Already up to date.
 
 RUN apt-get update && apt-get install -y openssh-server python3
 RUN mkdir /var/run/sshd
@@ -297,3 +298,15 @@ exit
 Expected output
 ![image](https://github.com/user-attachments/assets/0ff0a5c2-391a-4e5d-bdb0-f0567e390d45)
 ![image](https://github.com/user-attachments/assets/b29e66f6-cec5-4470-b617-1fcac031c9c7)
+
+## Lab - Running ansible ad-hoc command using static inventory file
+```
+cd ~/terraform-may-2025
+git pull
+cd Day1/ansible/StaticInventory
+cat hosts
+ansible -i hosts all -m ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f341d443-6efc-4220-9dc7-88eadee4e3e9)
