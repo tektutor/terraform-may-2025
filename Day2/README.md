@@ -321,3 +321,54 @@ go run ./if-else.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/4eae6057-679f-4235-a7f4-d61dfd7d0f41)
+
+## Lab - Golang array
+Create a file named arrays.go with the below content
+```
+package main
+
+import "fmt"
+
+func main() {
+
+	//We have declared an array of integers of size 5 
+	//So we can store upto 5 integer values into this array
+	//go lang array size if fixed
+	//array index starts from 0
+	//valid array index range is 0 to 4, total 5 values
+	var arr [5]int
+
+	//let's assign some values into the array
+	arr[0] = 10
+	arr[1] = 20
+	arr[2] = 30
+	arr[3] = 40
+	arr[4] = 50
+
+	//arr[5] = 60 This will report array index out of bounds error
+
+	fmt.Println("Array elements are ...")
+	fmt.Println(arr)
+
+	count := len(arr)
+	fmt.Println("Length of array :", count)
+
+	//Modifying values stored in an array
+	arr[3] = 25
+
+	fmt.Println("Array elements are ...")
+	for i := 0; i < count; i++ {
+           fmt.Printf("%d\t", arr[i])
+	}
+	fmt.Println()
+
+}
+```
+
+Run the application
+```
+go run ./arrays.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/d6909dfe-5728-494e-9334-bc58d2cc816e)
