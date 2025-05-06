@@ -1,0 +1,4 @@
+- name: This playbook install nginx, configures web root folder, deploy a custom web page
+  hosts: all
+  roles:
+  - nginx

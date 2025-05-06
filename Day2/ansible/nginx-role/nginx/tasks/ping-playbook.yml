@@ -1,20 +1,17 @@
 - name: First play
   hosts: ubuntu1
-  gather_facts: no
   tasks:
   - name: First Play - First Task
     ping: 
 
 - name: Second play
   hosts: ubuntu2
-  gather_facts: no
   tasks:
   - name: Second Play - First Task
     ping: 
 
 - name: Third play
   hosts: all 
-  gather_facts: no
   tasks:
   - name: Third Play - First Task
     ping: 
