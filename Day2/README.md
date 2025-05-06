@@ -84,3 +84,4 @@ ansible all -m ping
 
 Expected output
 ![image](https://github.com/user-attachments/assets/d605d56a-8248-4425-a2c3-290e36de7d18)
+![image](https://github.com/user-attachments/assets/47d1c797-c04a-4bb7-8bb9-672cc61c9feb)
