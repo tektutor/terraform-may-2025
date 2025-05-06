@@ -13,7 +13,7 @@ https://survey.zohopublic.com/zs/XuagEu
 - When we power on a machine, BIOS will perform POST (Power On Self Test)
   - BIOS will instruct the CPU to launch the Boot Loader software residing in MBR
   - Boot Loader then scans all your hard disks looking for Operating Systems, if it finds more than one OS, it gives a menu for you to choose between those OS
-- though more than one OS is installed on your system, only one can be actively running at any point of time
+- though more than one OS is installed on your system, only one OS can be actively running at any point of time
 </pre>  
 
 ## Info - Hypervisor Overview
