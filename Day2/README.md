@@ -249,3 +249,4 @@ go run ./hello.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/a3a207c2-2de5-48f9-90dd-ea49606b8d86)
+![image](https://github.com/user-attachments/assets/f6c31537-03f1-41f5-b543-d3a2c6e9b128)
