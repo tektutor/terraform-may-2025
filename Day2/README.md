@@ -142,3 +142,34 @@ Expected output
 ![image](https://github.com/user-attachments/assets/47eac379-5599-4b3b-bf0a-f53df9d1bd06)
 ![image](https://github.com/user-attachments/assets/80e51fbd-c237-4701-996a-e01bd303c915)
 
+## Info - Ansible Role
+<pre>
+- is a reusable code
+- ansible role though it looks like a playbook it can't be executed directly like we run a playbook
+- ansible roles can be invoked from one or more playbooks
+- if multiple softwares has to be installed, for each software we need to write a separate role
+  for example
+  - to install Oracle DB Server in Ubuntu, Fedora, RHEL we can develop a single oracle ansible role
+  - to install weblogic app server in Ubuntu, RHEL, Suse we can develop a single weblogic ansible role
+  - these roles can then be invoked from a playbook
+- roles follows all the ansible recommended best practices, directory structure etc, to help us reuse code
+</pre>
+
+## Demo - Creating a custom nginx ansible role using ansible galaxy tool
+```
+cd ~/terraform-may-2025
+git pull
+cd Day2/ansible/nginx-role
+ansible-galaxy create nginx
+tree nginx
+cat install-nginx-playbook
+ansible-playbook install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a0984bd4-e10f-43d4-a3cc-282fbb75f10a)
+![image](https://github.com/user-attachments/assets/04b06758-e3dd-48bc-94d1-82c7df043cb5)
+![image](https://github.com/user-attachments/assets/fac4bb7d-cdae-4df3-b379-1e0d8b58f08f)
+![image](https://github.com/user-attachments/assets/4e8e9041-f108-4589-9761-d7cd64817838)
+![image](https://github.com/user-attachments/assets/cba20082-722c-4dc6-9ade-7198faa58d27)
+![image](https://github.com/user-attachments/assets/c8797179-ae83-445c-94be-658995350e9d)
