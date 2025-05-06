@@ -155,7 +155,10 @@ Expected output
 - roles follows all the ansible recommended best practices, directory structure etc, to help us reuse code
 </pre>
 
-## Demo - Creating a custom nginx ansible role using ansible galaxy tool
+## Lab - Creating a custom nginx ansible role using ansible galaxy tool
+
+As the nginx role is already created, you can skip the "ansible-galaxy create nginx" command.
+
 ```
 cd ~/terraform-may-2025
 git pull
