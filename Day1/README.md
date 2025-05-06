@@ -3,7 +3,7 @@
 ## Please share your first day feedback
 https://survey.zohopublic.com/zs/XuagEu
 
-## Info - Dual/multi booting  - dynamic inventory ( python script )
+## Info - Dual/multi booting
 
 <pre>
 - let's say you already have windows OS installed on your laptop, for R&D purpose you need some Linux OS
