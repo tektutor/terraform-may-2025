@@ -162,7 +162,14 @@ git pull
 cd Day2/ansible/nginx-role
 ansible-galaxy create nginx
 tree nginx
+cat install-nginx-playbook
+ansible-playbook install-nginx-playbook.yml
 ```
 
 Expected output
-![image](https://github.com/user-attachments/assets/a4557109-d269-4bc1-b73e-44995c3c136a)
+![image](https://github.com/user-attachments/assets/a0984bd4-e10f-43d4-a3cc-282fbb75f10a)
+![image](https://github.com/user-attachments/assets/04b06758-e3dd-48bc-94d1-82c7df043cb5)
+![image](https://github.com/user-attachments/assets/fac4bb7d-cdae-4df3-b379-1e0d8b58f08f)
+![image](https://github.com/user-attachments/assets/4e8e9041-f108-4589-9761-d7cd64817838)
+![image](https://github.com/user-attachments/assets/cba20082-722c-4dc6-9ade-7198faa58d27)
+![image](https://github.com/user-attachments/assets/c8797179-ae83-445c-94be-658995350e9d)
