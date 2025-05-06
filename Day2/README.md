@@ -154,3 +154,15 @@ Expected output
   - these roles can then be invoked from a playbook
 - roles follows all the ansible recommended best practices, directory structure etc, to help us reuse code
 </pre>
+
+## Demo - Creating a custom nginx ansible role using ansible galaxy tool
+```
+cd ~/terraform-may-2025
+git pull
+cd Day2/ansible/nginx-role
+ansible-galaxy create nginx
+tree nginx
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a4557109-d269-4bc1-b73e-44995c3c136a)
