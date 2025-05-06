@@ -318,3 +318,29 @@ go run ./userinputs.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/12454c5e-9d6b-4923-9262-5a661071acf2)
+
+## Lab - Understanding golang if else statement
+Create a file named if-else.go with the below code
+```
+package main
+
+import "fmt"
+
+func main() {
+   x := 100
+
+   if x%2 == 0 {
+	   fmt.Println(x, " is an even number")
+   } else {
+	   fmt.Println(x, " is an odd number")
+   }
+}
+```
+
+Run the program
+```
+go run ./if-else.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/4eae6057-679f-4235-a7f4-d61dfd7d0f41)
