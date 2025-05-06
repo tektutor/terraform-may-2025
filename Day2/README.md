@@ -211,3 +211,200 @@ ansible-playbook playbook.yml
 Expected output
 ![image](https://github.com/user-attachments/assets/744e7af1-d7d4-43f8-b6d9-657b51e6b745)
 ![image](https://github.com/user-attachments/assets/c617995a-ab4b-4424-a932-87bbd417a36e)
+
+## Info - Golang overview
+<pre>
+- golang is developed by Google using C programming language
+- golang is a compiled programming language
+- golang syntax resembles very close to C programming language
+- just like C/C++/C# main function is the entry-point function ( the very function that will invoked when you run a go application )
+- golang supports pointers but memory is managed by garbage collector unlike C/C++
+- golang doesn't support class
+- golang only supports functions
+- using golang one can develop a new compiler/interpreter, a game, console based application, graphical application that runs on your local machine, can develop mobile applications, can develop AI/ML applications, web applications, etc.,
+- using golang one can develop REST API, Microservices, etc.,
+- is case-sensitive
+- statically typed programming language
+- performance wise, it is faster than most compiled languages, definitely more faster than interpretted and scripting languages
+- even compilation is done faster in go lang for bulky applications
+- Some of the popular tools developed in Golang
+  - Terraform
+  - Docker
+  - Kubernetes
+  - Openshift
+</pre>
+
+## Lab - Install Microsoft visual studio code editor in Ubuntu
+```
+sudo snap install code --classic
+```
+
+## Lab - Write your first Hello world in golang
+Create a file named hello.go with the below content
+```
+package main
+
+import "fmt"
+
+func main() {
+  fmt.Println( "Hello World !" )
+}
+```
+
+Run your application
+```
+go run ./hello.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f6c31537-03f1-41f5-b543-d3a2c6e9b128)
+
+## Lab - golang program that demonstrates accepting user inputs
+
+Create a file name userinputs.go with the below content
+```
+package main
+
+import "fmt"
+
+func main() {
+  //The below line declares a variable named x and it is initializing it with a value 0
+  x := 0
+  y := 0
+
+  fmt.Print("Enter your first integer :" )
+  fmt.Scanf("%d", &x )
+
+  fmt.Print("Enter your second integer :" )
+  fmt.Scanf("%d", &y )
+
+  fmt.Println("Value of x :", x )
+  fmt.Println("Value of y :", y )
+
+  //Declares a variable named tmp of type string 
+  var temp string
+  fmt.Println("Press any key to exit ...")
+  fmt.Scanln(&temp)
+}
+```
+
+Run your application
+```
+go run ./userinputs.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/12454c5e-9d6b-4923-9262-5a661071acf2)
+
+## Lab - Understanding golang if else statement
+Create a file named if-else.go with the below code
+```
+package main
+
+import "fmt"
+
+func main() {
+   x := 100
+
+   if x%2 == 0 {
+	   fmt.Println(x, " is an even number")
+   } else {
+	   fmt.Println(x, " is an odd number")
+   }
+}
+```
+
+Run the program
+```
+go run ./if-else.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/4eae6057-679f-4235-a7f4-d61dfd7d0f41)
+
+## Lab - Golang array
+Create a file named arrays.go with the below content
+```
+package main
+
+import "fmt"
+
+func main() {
+
+	//We have declared an array of integers of size 5 
+	//So we can store upto 5 integer values into this array
+	//go lang array size if fixed
+	//array index starts from 0
+	//valid array index range is 0 to 4, total 5 values
+	var arr [5]int
+
+	//let's assign some values into the array
+	arr[0] = 10
+	arr[1] = 20
+	arr[2] = 30
+	arr[3] = 40
+	arr[4] = 50
+
+	//arr[5] = 60 This will report array index out of bounds error
+
+	fmt.Println("Array elements are ...")
+	fmt.Println(arr)
+
+	count := len(arr)
+	fmt.Println("Length of array :", count)
+
+	//Modifying values stored in an array
+	arr[3] = 25
+
+	fmt.Println("Array elements are ...")
+	for i := 0; i < count; i++ {
+           fmt.Printf("%d\t", arr[i])
+	}
+	fmt.Println()
+
+}
+```
+
+Run the application
+```
+go run ./arrays.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/d6909dfe-5728-494e-9334-bc58d2cc816e)
+
+## Lab - Golang error handing
+Create a file named error-handling.go with the below content
+```
+package main
+
+import (
+   "fmt"
+   "os"
+   "os/user"
+   "github.com/sttk/stringcase"
+)
+
+func main() {
+   u, err := user.Current() 
+
+   if err != nil {
+      fmt.Println("Cannot get current user:", err)
+      os.Exit(1)
+   }
+
+   fmt.Print("Hello %s, welcome!\n", stringcase.PascalCase(u.Username) )
+}
+```
+
+Run the application
+```
+go mod init main
+cat go.mod
+go mod tidy
+go run ./error-handling.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/32abf33c-983a-4374-9a7d-6e09f7658db9)
+![image](https://github.com/user-attachments/assets/2b215a48-e6eb-4c22-9862-36bb52106dc7)
