@@ -72,3 +72,15 @@ exit
 
 Expected output
 ![image](https://github.com/user-attachments/assets/9b949f6c-3277-4c80-ac5a-198b59043769)
+
+## Lab - Integrating the rocky containers in the static inventory and check if ansible can ping rocky nodes
+```
+cd ~/terraform-may-2025
+git pull
+cd Day2/ansible/before-refactoring
+cat hosts
+ansible all -m ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/d605d56a-8248-4425-a2c3-290e36de7d18)
