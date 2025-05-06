@@ -1,0 +1,6 @@
+- name: This playbook demonstrates accessing ansible vault secured information from an ansible vault file
+  hosts: localhost
+  vars_files:
+  - mysql-login-credentials.yml
+  tasks:
+  - debug: msg="username - {{username}}, password - {{password}}"
