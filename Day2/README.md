@@ -96,10 +96,17 @@ cd Day2/ansible/before-refactoring
 cat hosts
 cat install-nginx-playbook.yml
 ansible-playbook install-nginx-playbook.yml
+
+curl http://localhost:8001
+curl http://localhost:8002
+curl http://localhost:8003
+curl http://localhost:8004
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/ba746c30-bafd-4bd8-8bb8-3f6dd5f70cbd)
 ![image](https://github.com/user-attachments/assets/9bd83ea6-5473-45ab-829d-d7a6d3c2993e)
 ![image](https://github.com/user-attachments/assets/abe31e2b-dda6-432d-9e6a-4d5a02ee8fda)
+![image](https://github.com/user-attachments/assets/bdca46ad-1106-4e69-974d-b0fa1246bd80)
+![image](https://github.com/user-attachments/assets/1f2d556a-f9fb-4617-939a-5f9c2ff5d8b2)
 
