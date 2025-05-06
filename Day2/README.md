@@ -230,6 +230,11 @@ Expected output
   - Openshift
 </pre>
 
+## Lab - Install Microsoft visual studio code editor in Ubuntu
+```
+sudo snap install code --classic
+```
+
 ## Lab - Write your first Hello world in golang
 Create a file named hello.go with the below content
 ```
