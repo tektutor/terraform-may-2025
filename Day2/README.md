@@ -185,3 +185,15 @@ Expected output
 - the password can be typed manually or we can store it somewhere and give the path in the ansible.cfg
 </pre>
 
+## Lab - Using ansible vault tool to secure your sensitive information
+```
+ansible-vault create mysql-login-credentials.yml
+ansible-vault view mysql-login-credentials.yml
+ansible-vault edit mysql-login-credentials.yml
+ansible-vault decrypt mysql-login-credentials.yml
+ansible-vault encrypt mysql-login-credentials.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/6f2c9415-31eb-4df4-881c-5ae2ab31e126)
+![image](https://github.com/user-attachments/assets/fb7bc88c-f780-4381-b5fa-9c3ef42cf9ff)
