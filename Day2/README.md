@@ -1,5 +1,18 @@
 # Day 2
 
+## Info - SOLID Design Principles
+<pre>
+S - Single Responsibility Principle (SRP)
+O - Open Closed Principle (OCP)
+    - Your design is good if it satisfies the following desing principles
+    - A design/code is considered good if it is open of extension
+    - Extending new functionality should be done without modifying existing code
+    - To add new functionality you can write new code 
+L - Liskov Substitution Principle (LSP)
+I - Interface Seggregation
+D - Dependency Injection or Dependency Inversion or Inversion of Control(IOC)
+</pre>
+
 ## Lab - Using Refactored static inventory file
 Make sure your containers are running
 ```
@@ -96,10 +109,36 @@ cd Day2/ansible/before-refactoring
 cat hosts
 cat install-nginx-playbook.yml
 ansible-playbook install-nginx-playbook.yml
+
+curl http://localhost:8001
+curl http://localhost:8002
+curl http://localhost:8003
+curl http://localhost:8004
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/ba746c30-bafd-4bd8-8bb8-3f6dd5f70cbd)
 ![image](https://github.com/user-attachments/assets/9bd83ea6-5473-45ab-829d-d7a6d3c2993e)
 ![image](https://github.com/user-attachments/assets/abe31e2b-dda6-432d-9e6a-4d5a02ee8fda)
+![image](https://github.com/user-attachments/assets/bdca46ad-1106-4e69-974d-b0fa1246bd80)
+![image](https://github.com/user-attachments/assets/1f2d556a-f9fb-4617-939a-5f9c2ff5d8b2)
+
+## Lab - Running the refactored install nginx playbook
+```
+cd terraform-may-2025
+git pull
+cd Day2/ansible/after-refactoring
+ansible-playbook install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/ec11fae1-3d38-42bb-9d16-ee2c836ccced)
+![image](https://github.com/user-attachments/assets/112da6fd-3ba5-409d-9f68-38107ecd3e12)
+![image](https://github.com/user-attachments/assets/170aff77-3fb7-437a-bafb-9130758796b7)
+![image](https://github.com/user-attachments/assets/31a7b7bb-93df-4e00-bb6e-318c62394fd0)
+![image](https://github.com/user-attachments/assets/e54ec909-792a-4df3-aaca-96a7ad7d6202)
+![image](https://github.com/user-attachments/assets/8d38eecc-1f08-467a-b5b2-6f29a76beefd)
+![image](https://github.com/user-attachments/assets/87a7df0e-dba9-425c-a73c-3daae5e52e91)
+![image](https://github.com/user-attachments/assets/47eac379-5599-4b3b-bf0a-f53df9d1bd06)
+![image](https://github.com/user-attachments/assets/80e51fbd-c237-4701-996a-e01bd303c915)
 
