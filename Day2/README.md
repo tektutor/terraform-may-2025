@@ -197,3 +197,17 @@ ansible-vault encrypt mysql-login-credentials.yml
 Expected output
 ![image](https://github.com/user-attachments/assets/6f2c9415-31eb-4df4-881c-5ae2ab31e126)
 ![image](https://github.com/user-attachments/assets/fb7bc88c-f780-4381-b5fa-9c3ef42cf9ff)
+
+## Lab - Accessing vault protected data from an ansible playbook
+```
+cd ~/terraform-may-2025
+git pull
+cd Day2/ansible/vault
+cat mysql-login-credentials.yml
+cat playbook.yml
+ansible-playbook playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/744e7af1-d7d4-43f8-b6d9-657b51e6b745)
+![image](https://github.com/user-attachments/assets/c617995a-ab4b-4424-a932-87bbd417a36e)
