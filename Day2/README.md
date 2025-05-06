@@ -58,3 +58,17 @@ docker ps
 
 Expected output
 ![image](https://github.com/user-attachments/assets/7bcab2e7-0702-47b9-a2dc-716fc22f03b6)
+
+## Lab - Checking if we are able to SSH into the rocky1 and rock2 ansible node containers
+```
+docker ps
+
+ssh -p 2003 root@localhost
+exit
+
+ssh -p 2004 root@localhost
+exit
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/9b949f6c-3277-4c80-ac5a-198b59043769)
