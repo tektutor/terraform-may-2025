@@ -44,3 +44,17 @@ docker images
 Expected output
 ![image](https://github.com/user-attachments/assets/05dbb747-4869-47cf-a360-a91accec0bed)
 ![image](https://github.com/user-attachments/assets/3643b48a-8ea6-4aa3-86d0-25576b9471ee)
+
+## Lab - Let's create couple of rocky containers using our custom rocky ansible node docker image
+```
+docker images | grep tektutor
+docker ps
+
+docker run -d --name rocky1 --hostname rocky1 -p 2003:22 -p 8003:80 tektutor/rocky-ansible-node:latest
+docker run -d --name rocky2 --hostname rocky2 -p 2004:22 -p 8004:80 tektutor/rocky-ansible-node:latest 
+
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/7bcab2e7-0702-47b9-a2dc-716fc22f03b6)
