@@ -1,4 +1,27 @@
-# Day 2
+# Day 2package main
+
+import "fmt"
+
+func main() {
+  //The below line declares a variable named x and it is initializing it with a value 0
+  x := 0
+  y := 0
+
+  fmt.Print("Enter your first integer :" )
+  fmt.Scanf("%d", &x )
+
+  fmt.Print("Enter your second integer :" )
+  fmt.Scanf("%d", &y )
+
+  fmt.Println("Value of x :", x )
+  fmt.Println("Value of y :", y )
+
+  //Declares a variable named tmp of type string 
+  var temp string
+  fmt.Println("Press any key to exit ...")
+  fmt.Scanln(&temp)
+}
+
 
 ## Info - SOLID Design Principles
 <pre>
@@ -223,6 +246,10 @@ Expected output
 - golang only supports functions
 - using golang one can develop a new compiler/interpreter, a game, console based application, graphical application that runs on your local machine, can develop mobile applications, can develop AI/ML applications, web applications, etc.,
 - using golang one can develop REST API, Microservices, etc.,
+- is case-sensitive
+- statically typed programming language
+- performance wise, it is faster than most compiled languages, definitely more faster than interpretted and scripting languages
+- even compilation is done faster in go lang for bulky applications
 - Some of the popular tools developed in Golang
   - Terraform
   - Docker
