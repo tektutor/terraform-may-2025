@@ -372,3 +372,39 @@ go run ./arrays.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/d6909dfe-5728-494e-9334-bc58d2cc816e)
+
+## Lab - Golang error handing
+Create a file named error-handling.go with the below content
+```
+package main
+
+import (
+   "fmt"
+   "os"
+   "os/user"
+   "github.com/sttk/stringcase"
+)
+
+func main() {
+   u, err := user.Current() 
+
+   if err != nil {
+      fmt.Println("Cannot get current user:", err)
+      os.Exit(1)
+   }
+
+   fmt.Print("Hello %s, welcome!\n", stringcase.PascalCase(u.Username) )
+}
+```
+
+Run the application
+```
+go mod init main
+cat go.mod
+go mod tidy
+go run ./error-handling.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/32abf33c-983a-4374-9a7d-6e09f7658db9)
+![image](https://github.com/user-attachments/assets/2b215a48-e6eb-4c22-9862-36bb52106dc7)
