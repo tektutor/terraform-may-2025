@@ -1,6 +1,17 @@
 # Day 2
 
 ## Lab - Using Refactored static inventory file
+Make sure your containers are running
+```
+docker ps
+```
+
+In case they are not running, you need to start them
+```
+docker start ubuntu1 ubuntu1
+```
+
+Now proceed as shown below
 ```
 cd ~/terraform-may-2025
 git pull
