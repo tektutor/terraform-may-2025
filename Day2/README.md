@@ -85,3 +85,21 @@ ansible all -m ping
 Expected output
 ![image](https://github.com/user-attachments/assets/d605d56a-8248-4425-a2c3-290e36de7d18)
 ![image](https://github.com/user-attachments/assets/47d1c797-c04a-4bb7-8bb9-672cc61c9feb)
+![image](https://github.com/user-attachments/assets/c377f7cd-dbbf-4a31-b2ea-96161f91bca2)
+![image](https://github.com/user-attachments/assets/c14e518d-9c9c-494b-84eb-3e4f9078e14b)
+
+## Lab - Adding support for Rocky linux in our install nginx playbook
+```
+cd ~/terraform-may-2025
+git pull
+cd Day2/ansible/before-refactoring
+cat hosts
+cat install-nginx-playbook.yml
+ansible-playbook install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/ba746c30-bafd-4bd8-8bb8-3f6dd5f70cbd)
+![image](https://github.com/user-attachments/assets/9bd83ea6-5473-45ab-829d-d7a6d3c2993e)
+![image](https://github.com/user-attachments/assets/abe31e2b-dda6-432d-9e6a-4d5a02ee8fda)
+
