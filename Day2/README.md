@@ -142,3 +142,15 @@ Expected output
 ![image](https://github.com/user-attachments/assets/47eac379-5599-4b3b-bf0a-f53df9d1bd06)
 ![image](https://github.com/user-attachments/assets/80e51fbd-c237-4701-996a-e01bd303c915)
 
+## Info - Ansible Role
+<pre>
+- is a reusable code
+- ansible role though it looks like a playbook it can't be executed directly like we run a playbook
+- ansible roles can be invoked from one or more playbooks
+- if multiple softwares has to be installed, for each software we need to write a separate role
+  for example
+  - to install Oracle DB Server in Ubuntu, Fedora, RHEL we can develop a single oracle ansible role
+  - to install weblogic app server in Ubuntu, RHEL, Suse we can develop a single weblogic ansible role
+  - these roles can then be invoked from a playbook
+- roles follows all the ansible recommended best practices, directory structure etc, to help us reuse code
+</pre>
