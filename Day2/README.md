@@ -211,3 +211,21 @@ ansible-playbook playbook.yml
 Expected output
 ![image](https://github.com/user-attachments/assets/744e7af1-d7d4-43f8-b6d9-657b51e6b745)
 ![image](https://github.com/user-attachments/assets/c617995a-ab4b-4424-a932-87bbd417a36e)
+
+## Info - Golang overview
+<pre>
+- golang is developed by Google using C programming language
+- golang is a compiled programming language
+- golang syntax resembles very close to C programming language
+- just like C/C++/C# main function is the entry-point function ( the very function that will invoked when you run a go application )
+- golang supports pointers but memory is managed by garbage collector unlike C/C++
+- golang doesn't support class
+- golang only supports functions
+- using golang one can develop a new compiler/interpreter, a game, console based application, graphical application that runs on your local machine, can develop mobile applications, can develop AI/ML applications, web applications, etc.,
+- using golang one can develop REST API, Microservices, etc.,
+- Some of the popular tools developed in Golang
+  - Terraform
+  - Docker
+  - Kubernetes
+  - Openshift
+</pre>
