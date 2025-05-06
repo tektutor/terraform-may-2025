@@ -155,7 +155,10 @@ Expected output
 - roles follows all the ansible recommended best practices, directory structure etc, to help us reuse code
 </pre>
 
-## Demo - Creating a custom nginx ansible role using ansible galaxy tool
+## Lab - Creating a custom nginx ansible role using ansible galaxy tool
+
+As the nginx role is already created, you can skip the "ansible-galaxy create nginx" command.
+
 ```
 cd ~/terraform-may-2025
 git pull
@@ -173,3 +176,38 @@ Expected output
 ![image](https://github.com/user-attachments/assets/4e8e9041-f108-4589-9761-d7cd64817838)
 ![image](https://github.com/user-attachments/assets/cba20082-722c-4dc6-9ade-7198faa58d27)
 ![image](https://github.com/user-attachments/assets/c8797179-ae83-445c-94be-658995350e9d)
+
+## Info - Ansible vault
+<pre>
+- any sensitive information like login credentials, public key, private key, certs, etc can be secured saved in ansible vault file
+- ansible vault file is encrypted in AES256 encryption algorithm
+- to encrypt/decrypt vault file, we need to provide a password
+- the password can be typed manually or we can store it somewhere and give the path in the ansible.cfg
+</pre>
+
+## Lab - Using ansible vault tool to secure your sensitive information
+```
+ansible-vault create mysql-login-credentials.yml
+ansible-vault view mysql-login-credentials.yml
+ansible-vault edit mysql-login-credentials.yml
+ansible-vault decrypt mysql-login-credentials.yml
+ansible-vault encrypt mysql-login-credentials.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/6f2c9415-31eb-4df4-881c-5ae2ab31e126)
+![image](https://github.com/user-attachments/assets/fb7bc88c-f780-4381-b5fa-9c3ef42cf9ff)
+
+## Lab - Accessing vault protected data from an ansible playbook
+```
+cd ~/terraform-may-2025
+git pull
+cd Day2/ansible/vault
+cat mysql-login-credentials.yml
+cat playbook.yml
+ansible-playbook playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/744e7af1-d7d4-43f8-b6d9-657b51e6b745)
+![image](https://github.com/user-attachments/assets/c617995a-ab4b-4424-a932-87bbd417a36e)
