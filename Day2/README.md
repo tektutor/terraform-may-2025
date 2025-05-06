@@ -229,3 +229,23 @@ Expected output
   - Kubernetes
   - Openshift
 </pre>
+
+## Lab - Write your first Hello world in golang
+Create a file named hello.go with the below content
+```
+package main
+
+import "fmt"
+
+func main() {
+  fmt.Println( "Hello World !" )
+}
+```
+
+Run your application
+```
+go run ./hello.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a3a207c2-2de5-48f9-90dd-ea49606b8d86)
