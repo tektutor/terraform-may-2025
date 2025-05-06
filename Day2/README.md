@@ -254,3 +254,40 @@ go run ./hello.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/f6c31537-03f1-41f5-b543-d3a2c6e9b128)
+
+## Lab - golang program that demonstrates accepting user inputs
+
+Create a file name userinputs.go with the below content
+```
+package main
+
+import "fmt"
+
+func main() {
+  //The below line declares a variable named x and it is initializing it with a value 0
+  x := 0
+  y := 0
+
+  fmt.Print("Enter your first integer :" )
+  fmt.Scanf("%d", &x )
+
+  fmt.Print("Enter your second integer :" )
+  fmt.Scanf("%d", &y )
+
+  fmt.Println("Value of x :", x )
+  fmt.Println("Value of y :", y )
+
+  //Declares a variable named tmp of type string 
+  var temp string
+  fmt.Println("Press any key to exit ...")
+  fmt.Scanln(&temp)
+}
+```
+
+Run your application
+```
+go run ./userinputs.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/12454c5e-9d6b-4923-9262-5a661071acf2)
