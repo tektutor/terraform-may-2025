@@ -176,3 +176,12 @@ Expected output
 ![image](https://github.com/user-attachments/assets/4e8e9041-f108-4589-9761-d7cd64817838)
 ![image](https://github.com/user-attachments/assets/cba20082-722c-4dc6-9ade-7198faa58d27)
 ![image](https://github.com/user-attachments/assets/c8797179-ae83-445c-94be-658995350e9d)
+
+## Info - Ansible vault
+<pre>
+- any sensitive information like login credentials, public key, private key, certs, etc can be secured saved in ansible vault file
+- ansible vault file is encrypted in AES256 encryption algorithm
+- to encrypt/decrypt vault file, we need to provide a password
+- the password can be typed manually or we can store it somewhere and give the path in the ansible.cfg
+</pre>
+
