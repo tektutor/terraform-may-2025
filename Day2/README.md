@@ -15,7 +15,7 @@ Now proceed as shown below
 ```
 cd ~/terraform-may-2025
 git pull
-cd Day2/ansible
+cd Day2/ansible/before-refactoring
 cat hosts
 ansible -i hosts all -m ping
 ```
