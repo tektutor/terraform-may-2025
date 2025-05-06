@@ -1,0 +1,24 @@
+- name: This playbook will install nginx web server, configures it to pick web pages from our custom folder, deploys custom web page.
+  hosts: all
+  vars:
+  - greeting_msg: Welcome to DevOps!
+  vars_files:
+  - my_var_file.yml
+  tasks:
+  - name: Install nginx web server into Ubuntu ansible node
+    apt: name=nginx state=latest update_cache=yes
+
+  - name: Start nginx service in Ubuntu
+    service: name=nginx state=started
+
+  - name: Create the custom web root folder in Ubuntu
+    file: path=/var/html mode=0777 state=directory
+
+  - name: Configure nginx web server to use our custom web root folder in Ubuntu
+    copy: src=default dest=/etc/nginx/sites-available/default
+
+  - name: Restart nginx server to apply the config changes
+    service: name=nginx state=restarted
+
+  - name: Deploy our custom web page
+    template: src=index.html.j2 dest=/var/html/index.html
