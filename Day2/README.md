@@ -217,6 +217,8 @@ Expected output
 - golang is developed by Google using C programming language
 - golang is a compiled programming language
 - golang syntax resembles very close to C programming language
+- golang has 25 keywords
+- golang only supports for loop
 - just like C/C++/C# main function is the entry-point function ( the very function that will invoked when you run a go application )
 - golang supports pointers but memory is managed by garbage collector unlike C/C++
 - golang doesn't support class
