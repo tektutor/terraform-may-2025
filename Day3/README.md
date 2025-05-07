@@ -414,3 +414,50 @@ go run ./main.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/dbf8c94a-8641-42eb-9a6c-8099fc75a7e5)
+
+In case you support multiple version of your custom module, you could create a subfolder for addition
+```
+cd ~/custom-go-module/addition
+mkdir v2
+cp * v2
+```
+Make sure you update the go.mod file under addition/v2 as shown below
+```
+module addition/v2
+
+go 1.24.2
+```
+Make sure the main.go under ~/custom-go-module folder looks like shown below
+```
+package main
+
+import (
+  "fmt"
+  "addition/v2"
+  "subtraction"
+)
+
+func main() {
+
+	//x := 100.123 By default, golang will assume 100.123 as float64, hence we will get compilation error
+	//y := 200.456 By default, golang will assume 200.456 as float64, hence we will get compilation error
+
+	x := float32(100.123) // We are casting/converting float64 into float32
+	y := float32(200.456) // We are casting/converting float64 into float32
+
+	fmt.Println ( "The sum of", x, " and ", y, " is ", addition.Add( x, y ) )
+	fmt.Println ( "The difference of", x, " and ", y, " is ", subtraction.Subtract( x, y ) )
+
+}
+```
+
+Run it
+```
+cd ~/custom-go-module
+go mod edit --replace addition/v2=./addition/v2
+go mod tidy
+go run ./main.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/52201c81-8c69-4183-9cc3-18f61ab1f0e6)
