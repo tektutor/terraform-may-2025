@@ -697,3 +697,4 @@ terraform destroy --auto-approve
 
 Expected output
 ![image](https://github.com/user-attachments/assets/ae6242bb-f4a1-46e5-8ccb-19abb27ec888)
+![image](https://github.com/user-attachments/assets/2095ff4b-f6d1-42ea-9417-f195e4ce3dd4)
