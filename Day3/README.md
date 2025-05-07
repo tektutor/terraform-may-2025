@@ -331,3 +331,86 @@ go run ./slice.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/a79d7eb8-80d1-4008-83dc-97b55968d648)
+
+## Lab - Creating Custom Golang modules
+
+Let's create three modules namely main, addition and subtraction
+```
+cd ~
+mkdir custom-go-module
+cd custom-go-module
+mkdir addition subtraction
+```
+
+Let's create a module name addition
+```
+cd ~/custom-go-module/addition
+go mod init addition //Creates a file called go.mod with the name of the module and go language version supported
+```
+
+Under the addition folder, let's create a file called add.go with the below content
+```
+package addition
+
+func Add( x float32, y float32 ) float64 {
+  return float64( x + y )
+}
+```
+
+Under the subtraction folder, let's create 
+```
+cd ~/custom-go-module/subtraction
+go mod init subtraction //Creates a file name go.mod with the name of the module and go language version supported
+```
+
+Under the subtraction folder, let's create a file named subtract.go with the below content
+```
+package subtraction
+
+func Subtract( x float32, y float32 ) float64 {
+	return float64(x-y)
+}
+```
+
+Let's create the main module
+```
+cd ~/custom-go-module
+go mod init main
+```
+
+Let's create a file named main.go with the below code
+```
+package main
+
+import (
+  "fmt"
+  "addition"
+  "subtraction"
+)
+
+func main() {
+
+	//x := 100.123 By default, golang will assume 100.123 as float64, hence we will get compilation error
+	//y := 200.456 By default, golang will assume 200.456 as float64, hence we will get compilation error
+
+	x := float32(100.123) // We are casting/converting float64 into float32
+	y := float32(200.456) // We are casting/converting float64 into float32
+
+	fmt.Println ( "The sum of", x, " and ", y, " is ", addition.Add( x, y ) )
+	fmt.Println ( "The difference of", x, " and ", y, " is ", subtraction.Subtract( x, y ) )
+
+}
+```
+
+Run it
+```
+cd ~/custom-go-module
+go mod edit --replace addition=./addition  //This helps golang to locate the addition module
+go mod edit --replace subtraction=./subtraction  //This helps golang to locate the subtraction module
+go mod tidy //This will download all the dependent modules
+
+go run ./main.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/dbf8c94a-8641-42eb-9a6c-8099fc75a7e5)
