@@ -701,8 +701,13 @@ Expected output
 
 ## Lab - Invoking ansible playbook from Terraform using local-exec provisioner block
 ```
-
-
+cd ~/terraform-may-2025
+git pull
+cd Day3/terraform/local-exec
+docker ps
+terraform init
+terraform apply --auto-approve
+docker ps
 ```
 
 Expected output
