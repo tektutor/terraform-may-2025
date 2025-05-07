@@ -564,3 +564,92 @@ Expected output
   - docker_image
   - docker_container
 </pre>
+
+## Lab - Checking the Terraform version
+```
+terraform version
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/24043818-10e8-4381-9bf5-db6b67aba917)
+
+
+## Info - Terraform Providers can be downloaded from registery.terraform.io website
+![image](https://github.com/user-attachments/assets/b025cf27-e62f-4f66-9f25-23d650f8052e)
+
+## Lab - Using Docker Image to provision containers
+Create a file named main.tf
+```
+terraform {
+  required_providers {
+    docker = {
+      source = "kreuzwerker/docker"
+      version = "3.5.0"
+    }
+  }
+}
+
+provider "docker" {
+  # Configuration options
+}
+
+# Terraform will consider the docker image as a read-only resource as we are using data block
+data "docker_image" "tektutor_ansible_ubuntu_image" {
+  name = "tektutor/ubuntu-ansible-node:latest"
+}
+
+# Terraform will consider the docker image as a read-only resource as we are using data block
+data "docker_image" "tektutor_ansible_rocky_image" {
+  name = "tektutor/rocky-ansible-node:latest"
+}
+
+# Terraform manages this resource, hence Terraform can Create, Replace, Update, Delete the resource (CRUD operations)
+resource "docker_container" "my_ubuntu_container1" {
+  image = data.docker_image.tektutor_ansible_ubuntu_image.name
+  name  = "ubuntu_container_1"
+}
+
+# Terraform manages this resource, hence Terraform can Create, Replace, Update, Delete the resource (CRUD operations)
+resource "docker_container" "my_rocky_container1" {
+  image = data.docker_image.tektutor_ansible_rocky_image.name
+  name  = "rocky_container_1"
+}
+```
+
+Make sure you don't have any containers already 
+```
+docker ps
+```
+
+In case you have some containers, you may delete them
+```
+docker rm ubuntu1 ubuntu2 rocky1 rocky2
+docker ps
+```
+
+The below command, downloads all the missing Terraform Providers mentioned in the terraform manifest scripts ( i.e *.tf files )
+```
+terraform init
+```
+
+Then we can provisions the docker containers using terraform as shown below
+```
+terraform plan
+terraform apply
+dokcer ps
+cat terraform.tfstate
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/5b7e1e0a-dc88-4050-a92b-98294eb8e9aa)
+![image](https://github.com/user-attachments/assets/5a38a83b-32ee-4765-b1c4-9684339f32a9)
+![image](https://github.com/user-attachments/assets/3e3aaff1-369e-4d10-b593-f98079979ae8)
+![image](https://github.com/user-attachments/assets/38007685-de3c-45e0-bbb3-d2fb3c88e988)
+![image](https://github.com/user-attachments/assets/2b077141-e457-4468-bb89-7ed814d539e3)
+![image](https://github.com/user-attachments/assets/f7476845-81dc-44b2-92a7-5ccb70ccaa20)
+![image](https://github.com/user-attachments/assets/c1ae7609-488a-43f1-9460-e14c12a55173)
+![image](https://github.com/user-attachments/assets/6808509d-8670-46f3-abfb-6eda97500dcb)
+![image](https://github.com/user-attachments/assets/a54141d3-0c92-48e5-9c7a-ee77b1618d21)
+![image](https://github.com/user-attachments/assets/8ddf899d-4366-4237-a30a-83d0a12f741f)
+![image](https://github.com/user-attachments/assets/43526108-35bb-481a-a173-9412fa6daf26)
+![image](https://github.com/user-attachments/assets/d576baea-ada0-46dd-9e68-755fcd7c20f7)
