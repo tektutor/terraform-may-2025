@@ -701,9 +701,47 @@ Expected output
 
 ## Lab - Invoking ansible playbook from Terraform using local-exec provisioner block
 ```
-
-
+cd ~/terraform-may-2025
+git pull
+cd Day3/terraform/local-exec
+docker ps
+terraform init
+terraform apply --auto-approve
+docker ps
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/93a4525c-a04f-4aae-9e77-f0c67a6ca400)
+![image](https://github.com/user-attachments/assets/b4c4ce85-32ea-478d-aecc-e46c291f65ae)
+![image](https://github.com/user-attachments/assets/f85e151f-d6be-4dc0-988a-656aa5372b68)
+
+
+## Lab - Invoking commands on the remote machines using remote-exec provisioner block
+```
+cd ~/terraform-may-2025
+git pull
+cd Day3/terraform/remote-exec
+docker ps
+terraform init
+terraform apply --auto-approve
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/20b327cb-dfa7-41a7-8f36-a37420a1afac)
+![image](https://github.com/user-attachments/assets/f8d7699b-71db-4b52-bee1-ea374ef6bb0c)
+![image](https://github.com/user-attachments/assets/7856126e-a4b0-46b5-94bb-bfee91a4c497)
+![image](https://github.com/user-attachments/assets/d0d1f3c2-c962-475c-a0e8-d205eb92f307)
+![image](https://github.com/user-attachments/assets/8f21a7bc-b1da-4c3e-a526-ea626987cc70)
+
+
+Once you are done with this exercise, you may dispose the resource
+```
+terraform destroy --auto-approve
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/c64b973f-e160-486f-8a3b-974d819a8cca)
+![image](https://github.com/user-attachments/assets/e9dee442-299f-4487-bd47-cef7389ad67f)
+![image](https://github.com/user-attachments/assets/da2edf5f-3745-4e16-813a-09ca46e22f3b)
+![image](https://github.com/user-attachments/assets/d891c6f2-ced9-46f8-bb0f-c1cfc69670fc)
