@@ -1,0 +1,4 @@
+- name: Configure nginx web server to use our custom web root folder in Ubuntu
+  copy: src=default dest=/etc/nginx/sites-available/default
+  notify:
+  - Restart nginx server to apply the config changes in Ubuntu
