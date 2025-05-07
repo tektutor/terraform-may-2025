@@ -509,3 +509,147 @@ go run ./concurrency.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/6230df82-a09b-473a-8c79-e15c8d33ba8f)
+
+## Terraform Overview
+<pre>
+- is a Infrastructure as a code tool
+- it is used to automate provisioning containers, pull container images, virtual machines locally or on public/private/hybrid clouds, etc
+- it can also be used to provision storage locally(in your private datacenter) , or in public/private/hybrid cloud
+- it can help provisioning virtual machines using virtualbox, vmware, vsphere, etc.
+- Terraform is cloud newtral, it works pretty much in any environment and all the private, public and hybrid clouds
+- Alterates to Terraform
+  - AWS cloudformation
+    - disadvantage - can be used only to automate infracture within AWS public cloud and no other environment is supported
+- is developed in golang by a company called HashiCorp
+- the Domain Specific Language(DSL) i.e the language in which the automation code is written is called HCL
+- Terraform uses HCL(HashiCorp Configuration Language) as the DSL to auto infrastructure declaratively
+- it comes in two flavours
+  1. Terraform Core - open source and supports only command line
+  2. Terraform Enterprise - requires license and supports Web Interface, world-wide support is provided by Hashicorp
+</pre>
+
+## Info - Terraform High-Level Architecture
+![terraform](terraform-architecture-diagram.png)
+
+## Info - Terraform Providers
+<pre>
+- Terraform depends on Providers to provision resources
+- For example
+  - In order to provision an ec2 instance in AWS, Terraform depends on a provider called AWS ( registry.terrform.io )
+  - In order to provision an azure VM in Azure portal, Terraform depends on provider called Azure
+  - as long as there is a provider, Terraform can provision such resources
+  - In case, to provision a particular type of Resource within your organization and there is no ready-made provider, 
+    you can develop your own provider in Golang using Terraform Provider SDK
+  - Providers supports two types of object/resources
+    1. Resources
+       - If you wish to Provision ec2 instances using Terraform, then you will define a resource blocak expressing your expected state
+       - Terraform can Create, Replace, Update and Delete the resources managed by Terraform
+    2. Datasources ( already existing resources - these objects will be treated by terraform as a read-only resource )
+       - In case to provision certain resource your declarative terraform script(manifest) file depends on already existing resource
+	 then we call them as Datasources or Data block
+</pre>
+
+## Info - Terraform Resources
+<pre>
+- Each Terraform Providers supports one to many Resources
+- For instance, the docker provider supports the following resources
+  - docker_image
+  - docker_container
+</pre>
+
+## Info - Terraform Datasources
+<pre>
+- Each Terraform provider supports zero to many Datasources
+- For instance, the docker provider supports the following Datasources (Read only resources)
+  - docker_image
+  - docker_container
+</pre>
+
+## Lab - Checking the Terraform version
+```
+terraform version
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/24043818-10e8-4381-9bf5-db6b67aba917)
+
+
+## Info - Terraform Providers can be downloaded from registery.terraform.io website
+![image](https://github.com/user-attachments/assets/b025cf27-e62f-4f66-9f25-23d650f8052e)
+
+## Lab - Using Docker Image to provision containers
+Create a file named main.tf
+```
+terraform {
+  required_providers {
+    docker = {
+      source = "kreuzwerker/docker"
+      version = "3.5.0"
+    }
+  }
+}
+
+provider "docker" {
+  # Configuration options
+}
+
+# Terraform will consider the docker image as a read-only resource as we are using data block
+data "docker_image" "tektutor_ansible_ubuntu_image" {
+  name = "tektutor/ubuntu-ansible-node:latest"
+}
+
+# Terraform will consider the docker image as a read-only resource as we are using data block
+data "docker_image" "tektutor_ansible_rocky_image" {
+  name = "tektutor/rocky-ansible-node:latest"
+}
+
+# Terraform manages this resource, hence Terraform can Create, Replace, Update, Delete the resource (CRUD operations)
+resource "docker_container" "my_ubuntu_container1" {
+  image = data.docker_image.tektutor_ansible_ubuntu_image.name
+  name  = "ubuntu_container_1"
+}
+
+# Terraform manages this resource, hence Terraform can Create, Replace, Update, Delete the resource (CRUD operations)
+resource "docker_container" "my_rocky_container1" {
+  image = data.docker_image.tektutor_ansible_rocky_image.name
+  name  = "rocky_container_1"
+}
+```
+
+Make sure you don't have any containers already 
+```
+docker ps
+```
+
+In case you have some containers, you may delete them
+```
+docker rm ubuntu1 ubuntu2 rocky1 rocky2
+docker ps
+```
+
+The below command, downloads all the missing Terraform Providers mentioned in the terraform manifest scripts ( i.e *.tf files )
+```
+terraform init
+```
+
+Then we can provisions the docker containers using terraform as shown below
+```
+terraform plan
+terraform apply
+dokcer ps
+cat terraform.tfstate
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/5b7e1e0a-dc88-4050-a92b-98294eb8e9aa)
+![image](https://github.com/user-attachments/assets/5a38a83b-32ee-4765-b1c4-9684339f32a9)
+![image](https://github.com/user-attachments/assets/3e3aaff1-369e-4d10-b593-f98079979ae8)
+![image](https://github.com/user-attachments/assets/38007685-de3c-45e0-bbb3-d2fb3c88e988)
+![image](https://github.com/user-attachments/assets/2b077141-e457-4468-bb89-7ed814d539e3)
+![image](https://github.com/user-attachments/assets/f7476845-81dc-44b2-92a7-5ccb70ccaa20)
+![image](https://github.com/user-attachments/assets/c1ae7609-488a-43f1-9460-e14c12a55173)
+![image](https://github.com/user-attachments/assets/6808509d-8670-46f3-abfb-6eda97500dcb)
+![image](https://github.com/user-attachments/assets/a54141d3-0c92-48e5-9c7a-ee77b1618d21)
+![image](https://github.com/user-attachments/assets/8ddf899d-4366-4237-a30a-83d0a12f741f)
+![image](https://github.com/user-attachments/assets/43526108-35bb-481a-a173-9412fa6daf26)
+![image](https://github.com/user-attachments/assets/d576baea-ada0-46dd-9e68-755fcd7c20f7)
