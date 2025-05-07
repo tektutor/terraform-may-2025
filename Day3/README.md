@@ -530,3 +530,11 @@ Expected output
 
 ## Info - Terraform High-Level Architecture
 ![terraform](terraform-architecture-diagram.png)
+
+## Info - Terraform Providers
+<pre>
+- Terraform depends on Providers to provision resources
+- For example
+  - In order to provision an ec2 instance in AWS, Terraform depends on a provider called AWS ( registry.terrform.io )
+  - In order to provision an azure VM in Azure portal, Te
+</pre>
