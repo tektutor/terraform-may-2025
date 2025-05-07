@@ -669,3 +669,31 @@ Expected output
 ![image](https://github.com/user-attachments/assets/f400d106-7875-4cf7-916a-4ffa74613962)
 ![image](https://github.com/user-attachments/assets/ddff2094-5add-4d1e-8604-6527a2d24184)
 ![image](https://github.com/user-attachments/assets/efbb353e-352d-4135-ae3b-04a068db69da)
+
+## Lab - Terraform input and output variables
+```
+cd ~/terraform-may-2025
+git pull
+cd Day3/terraform/provision-container-with-input-and-output-variables
+docker ps
+terraform init
+terraform plan
+terraform apply --auto-approve
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/51c2738f-a08d-4cbf-b0de-06e81903cad2)
+![image](https://github.com/user-attachments/assets/3e457579-0efe-433f-ad6e-939d7ab745e0)
+![image](https://github.com/user-attachments/assets/ebe0c6fe-9e7b-498e-a2a9-a6f9c3bc63d5)
+![image](https://github.com/user-attachments/assets/2534300a-385d-4c8a-bcca-ce8043a5cf2d)
+![image](https://github.com/user-attachments/assets/4cb17af8-2428-456d-90ee-35c86c489dfc)
+![image](https://github.com/user-attachments/assets/157a791e-cc1f-491f-9492-4ad9681108fd)
+
+Once you are done with this lab exercise, you may destroy all the resources
+```
+terraform destroy --auto-approve
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/ae6242bb-f4a1-46e5-8ccb-19abb27ec888)
