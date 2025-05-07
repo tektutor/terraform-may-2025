@@ -30,4 +30,13 @@ func main() {
    fmt.Printf("Length of rectangle : %d\n", rectangle.GetLength())
    fmt.Printf("Width of rectangle  : %d\n", rectangle.GetWidth())
    fmt.Printf("Area of rectangle   : %d\n", rectangle.Area())
+
+   var rectPtr *Rectangle
+   rectPtr = &rectangle
+
+   fmt.Println("Length : ", rectPtr.length)
+   rectPtr.length = 500
+   fmt.Println("Length : ", rectPtr.length)
+
+   fmt.Println("Rectangle Length : ", rectangle.length )
 }
