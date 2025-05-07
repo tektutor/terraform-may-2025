@@ -536,5 +536,31 @@ Expected output
 - Terraform depends on Providers to provision resources
 - For example
   - In order to provision an ec2 instance in AWS, Terraform depends on a provider called AWS ( registry.terrform.io )
-  - In order to provision an azure VM in Azure portal, Te
+  - In order to provision an azure VM in Azure portal, Terraform depends on provider called Azure
+  - as long as there is a provider, Terraform can provision such resources
+  - In case, to provision a particular type of Resource within your organization and there is no ready-made provider, 
+    you can develop your own provider in Golang using Terraform Provider SDK
+  - Providers supports two types of object/resources
+    1. Resources
+       - If you wish to Provision ec2 instances using Terraform, then you will define a resource blocak expressing your expected state
+       - Terraform can Create, Replace, Update and Delete the resources managed by Terraform
+    2. Datasources ( already existing resources - these objects will be treated by terraform as a read-only resource )
+       - In case to provision certain resource your declarative terraform script(manifest) file depends on already existing resource
+	 then we call them as Datasources or Data block
+</pre>
+
+## Info - Terraform Resources
+<pre>
+- Each Terraform Providers supports one to many Resources
+- For instance, the docker provider supports the following resources
+  - docker_image
+  - docker_container
+</pre>
+
+## Info - Terraform Datasources
+<pre>
+- Each Terraform provider supports zero to many Datasources
+- For instance, the docker provider supports the following Datasources (Read only resources)
+  - docker_image
+  - docker_container
 </pre>
