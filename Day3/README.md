@@ -237,3 +237,41 @@ go run ./struct.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/eda23e44-cae8-4018-afb0-f56af0d75c9b)
+
+## Lab - Golang switch case
+```
+package main
+
+import "fmt"
+
+func main() {
+
+	var direction string
+
+	fmt.Print("Possible values are east,west,south,north")
+
+	fmt.Print("Enter some direction :")
+	fmt.Scanln(&direction)
+
+	switch direction {
+	case "east":
+		fmt.Println("You entered direction ", direction)
+	case "west":
+		fmt.Println("You entered direction ", direction)
+	case "south":
+		fmt.Println("You entered direction ", direction)
+	case "north":
+		fmt.Println("You entered direction ", direction)
+	default:
+		fmt.Println("Invalid direction", "possible values are east, west, north, south")
+	}
+}
+```
+
+Run it
+```
+go run ./switch-case.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a6aaa1a7-291e-47e7-90e8-674de63b092e)
