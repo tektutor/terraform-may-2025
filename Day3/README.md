@@ -509,3 +509,24 @@ go run ./concurrency.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/6230df82-a09b-473a-8c79-e15c8d33ba8f)
+
+## Terraform Overview
+<pre>
+- is a Infrastructure as a code tool
+- it is used to automate provisioning containers, pull container images, virtual machines locally or on public/private/hybrid clouds, etc
+- it can also be used to provision storage locally(in your private datacenter) , or in public/private/hybrid cloud
+- it can help provisioning virtual machines using virtualbox, vmware, vsphere, etc.
+- Terraform is cloud newtral, it works pretty much in any environment and all the private, public and hybrid clouds
+- Alterates to Terraform
+  - AWS cloudformation
+    - disadvantage - can be used only to automate infracture within AWS public cloud and no other environment is supported
+- is developed in golang by a company called HashiCorp
+- the Domain Specific Language(DSL) i.e the language in which the automation code is written is called HCL
+- Terraform uses HCL(HashiCorp Configuration Language) as the DSL to auto infrastructure declaratively
+- it comes in two flavours
+  1. Terraform Core - open source and supports only command line
+  2. Terraform Enterprise - requires license and supports Web Interface, world-wide support is provided by Hashicorp
+</pre>
+
+## Info - Terraform High-Level Architecture
+![terraform](terraform-architecture-diagram.png)
