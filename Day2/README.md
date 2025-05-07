@@ -236,6 +236,35 @@ Expected output
   - Openshift
 </pre>
 
+## Info - golang keywords ( Golang 1.24 supports a total of 25 keywords )
+<pre>
+- break
+- default
+- func
+- interface
+- select
+- case
+- defer
+- go
+- map
+- struct
+- chan
+- else
+- goto
+- package
+- switch
+- const
+- fallthrough
+- if
+- range
+- type
+- continue
+- for
+- import
+- return
+- var
+</pre>
+
 ## Lab - Install Microsoft visual studio code editor in Ubuntu
 ```
 sudo snap install code --classic
