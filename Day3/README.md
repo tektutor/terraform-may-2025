@@ -653,3 +653,17 @@ Expected output
 ![image](https://github.com/user-attachments/assets/8ddf899d-4366-4237-a30a-83d0a12f741f)
 ![image](https://github.com/user-attachments/assets/43526108-35bb-481a-a173-9412fa6daf26)
 ![image](https://github.com/user-attachments/assets/d576baea-ada0-46dd-9e68-755fcd7c20f7)
+
+Cleanup the resources once you are done with this lab exercise
+```
+cd ~/terraform-may-2025/Day3/terraform/provision-containers
+docker ps
+terraform destroy
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/98faa301-3cd1-4829-a770-f82b1db79580)
+![image](https://github.com/user-attachments/assets/149b37a0-0351-4ba9-86c5-424eed7c8731)
+![image](https://github.com/user-attachments/assets/6834f3cd-9160-4630-9b89-0aa7d97c80dd)
+![image](https://github.com/user-attachments/assets/f400d106-7875-4cf7-916a-4ffa74613962)
+![image](https://github.com/user-attachments/assets/ddff2094-5add-4d1e-8604-6527a2d24184)
