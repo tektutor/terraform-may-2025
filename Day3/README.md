@@ -659,6 +659,7 @@ Cleanup the resources once you are done with this lab exercise
 cd ~/terraform-may-2025/Day3/terraform/provision-containers
 docker ps
 terraform destroy
+docker images | grep tektutor
 ```
 
 Expected output
@@ -667,3 +668,4 @@ Expected output
 ![image](https://github.com/user-attachments/assets/6834f3cd-9160-4630-9b89-0aa7d97c80dd)
 ![image](https://github.com/user-attachments/assets/f400d106-7875-4cf7-916a-4ffa74613962)
 ![image](https://github.com/user-attachments/assets/ddff2094-5add-4d1e-8604-6527a2d24184)
+![image](https://github.com/user-attachments/assets/efbb353e-352d-4135-ae3b-04a068db69da)
