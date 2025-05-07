@@ -191,3 +191,49 @@ go run ./pointers.go
 Expected output
 ![image](https://github.com/user-attachments/assets/bb48441e-325b-46f0-8dd1-da7ea8e99e27)
 ![image](https://github.com/user-attachments/assets/0db5e7d4-8544-4ed7-9a5a-94aa9e087ecf)
+
+## Lab - golang struct with methods
+struct.go
+```
+package main
+
+import "fmt"
+
+type Rectangle struct {
+   length int
+   width  int
+}
+
+//golang Method of struct Rectangle
+func (rect Rectangle) Area() int {
+    area := rect.length * rect.width
+    return area
+}
+
+func (rect Rectangle) GetLength() int {
+	return rect.length
+}
+
+func (rect Rectangle) GetWidth() int {
+	return rect.width
+}
+
+func main() {
+   rectangle := Rectangle {
+      length: 100,
+      width : 200, 
+   }
+
+   fmt.Printf("Length of rectangle : %d\n", rectangle.GetLength())
+   fmt.Printf("Width of rectangle  : %d\n", rectangle.GetWidth())
+   fmt.Printf("Area of rectangle   : %d\n", rectangle.Area())
+}
+```
+
+Run it
+```
+go run ./struct.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/eda23e44-cae8-4018-afb0-f56af0d75c9b)
