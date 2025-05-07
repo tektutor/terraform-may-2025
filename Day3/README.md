@@ -712,3 +712,24 @@ docker ps
 
 Expected output
 ![image](https://github.com/user-attachments/assets/93a4525c-a04f-4aae-9e77-f0c67a6ca400)
+![image](https://github.com/user-attachments/assets/b4c4ce85-32ea-478d-aecc-e46c291f65ae)
+![image](https://github.com/user-attachments/assets/f85e151f-d6be-4dc0-988a-656aa5372b68)
+
+
+## Lab - Invoking commands on the remote machines using remote-exec provisioner block
+```
+cd ~/terraform-may-2025
+git pull
+cd Day3/terraform/remote-exec
+docker ps
+terraform init
+terraform apply --auto-approve
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/20b327cb-dfa7-41a7-8f36-a37420a1afac)
+![image](https://github.com/user-attachments/assets/f8d7699b-71db-4b52-bee1-ea374ef6bb0c)
+![image](https://github.com/user-attachments/assets/7856126e-a4b0-46b5-94bb-bfee91a4c497)
+![image](https://github.com/user-attachments/assets/d0d1f3c2-c962-475c-a0e8-d205eb92f307)
+![image](https://github.com/user-attachments/assets/8f21a7bc-b1da-4c3e-a526-ea626987cc70)
