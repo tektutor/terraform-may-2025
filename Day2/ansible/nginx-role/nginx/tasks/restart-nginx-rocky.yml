@@ -1,2 +1,0 @@
-- name: Restart the nginx server to apply the config changes in Rocky
-  shell: nginx -s stop && nginx

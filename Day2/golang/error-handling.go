@@ -15,5 +15,5 @@ func main() {
       os.Exit(1)
    }
 
-   fmt.Print("Hello %s, welcome!\n", stringcase.PascalCase(u.Username) )
+   fmt.Printf("Hello %s, welcome!\n", stringcase.PascalCase(u.Username) )
 }
