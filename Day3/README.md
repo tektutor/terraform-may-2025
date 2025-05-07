@@ -146,3 +146,48 @@ Expected output
 ![image](https://github.com/user-attachments/assets/312b3bbf-cd08-4305-9b75-ab253f877b51)
 ![image](https://github.com/user-attachments/assets/3694d95c-ac28-4e91-8f76-e20fa62d866a)
 
+
+## Lab - Golang pointers
+pointers.go
+```
+package main
+
+import "fmt"
+
+func sayHello( msgPtr *string ) {
+
+	//Dereferencing - the values stored at address pointed by msgPtrl will be printed here
+	fmt.Println("Inside sayHello function ", *msgPtr )
+	fmt.Println("Address pointed by msgPtr is ", msgPtr ) //Here the address pointed by pointer will be printed
+	fmt.Println("Address pointed by msgPtr is ", &msgPtr ) //Prints the address of msgPtr
+
+	tmp := *msgPtr //The value stored at the address pointed by msgPtr is assigned to tmp string
+
+	*msgPtr = tmp + " Golang" + " !"
+
+	fmt.Println("Inside sayHello before return ", *msgPtr)
+
+}
+
+func main() {
+   //msg is a string variable assigned with value "Hello"
+   msg := "Hello"
+
+   fmt.Println("Message before calling sayHello function is ", msg)
+   fmt.Println("Address of msg string is ", &msg)
+
+   //sayHello function is taking the address of msg string
+   sayHello( &msg )
+
+   fmt.Println("Message after calling sayHello function is ", msg )
+}
+```
+
+Run it
+```
+go run ./pointers.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/bb48441e-325b-46f0-8dd1-da7ea8e99e27)
+![image](https://github.com/user-attachments/assets/0db5e7d4-8544-4ed7-9a5a-94aa9e087ecf)
