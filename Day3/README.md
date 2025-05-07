@@ -733,3 +733,15 @@ Expected output
 ![image](https://github.com/user-attachments/assets/7856126e-a4b0-46b5-94bb-bfee91a4c497)
 ![image](https://github.com/user-attachments/assets/d0d1f3c2-c962-475c-a0e8-d205eb92f307)
 ![image](https://github.com/user-attachments/assets/8f21a7bc-b1da-4c3e-a526-ea626987cc70)
+
+
+Once you are done with this exercise, you may dispose the resource
+```
+terraform destroy --auto-approve
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/c64b973f-e160-486f-8a3b-974d819a8cca)
+![image](https://github.com/user-attachments/assets/e9dee442-299f-4487-bd47-cef7389ad67f)
+![image](https://github.com/user-attachments/assets/da2edf5f-3745-4e16-813a-09ca46e22f3b)
+![image](https://github.com/user-attachments/assets/d891c6f2-ced9-46f8-bb0f-c1cfc69670fc)
