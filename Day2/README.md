@@ -217,6 +217,8 @@ Expected output
 - golang is developed by Google using C programming language
 - golang is a compiled programming language
 - golang syntax resembles very close to C programming language
+- golang has 25 keywords
+- golang only supports for loop
 - just like C/C++/C# main function is the entry-point function ( the very function that will invoked when you run a go application )
 - golang supports pointers but memory is managed by garbage collector unlike C/C++
 - golang doesn't support class
@@ -232,6 +234,35 @@ Expected output
   - Docker
   - Kubernetes
   - Openshift
+</pre>
+
+## Info - golang keywords ( Golang 1.24 supports a total of 25 keywords )
+<pre>
+- break
+- default
+- func
+- interface
+- select
+- case
+- defer
+- go
+- map
+- struct
+- chan
+- else
+- goto
+- package
+- switch
+- const
+- fallthrough
+- if
+- range
+- type
+- continue
+- for
+- import
+- return
+- var
 </pre>
 
 ## Lab - Install Microsoft visual studio code editor in Ubuntu
