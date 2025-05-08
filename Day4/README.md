@@ -53,6 +53,7 @@ Then you may proceed with the below instructions
 cd ~/terraform-may-2025
 git pull
 cd Day4/custom-terraform-providers/file
+tree
 go mod init github.com/tektutor/terraform-provider-file
 go mod tidy
 ls -l
@@ -63,3 +64,6 @@ ls -l /home/rps/go/bin
 ```
 
 Expected output
+![image](https://github.com/user-attachments/assets/ce2331d5-cbeb-4164-bb8c-8fc627851059)
+![image](https://github.com/user-attachments/assets/06772e84-0125-408d-9bed-7d7a6a389c7c)
+![image](https://github.com/user-attachments/assets/a872714b-b2ba-47a7-96bd-fdd0746f7816)
