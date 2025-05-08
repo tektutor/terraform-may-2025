@@ -67,3 +67,38 @@ Expected output
 ![image](https://github.com/user-attachments/assets/ce2331d5-cbeb-4164-bb8c-8fc627851059)
 ![image](https://github.com/user-attachments/assets/06772e84-0125-408d-9bed-7d7a6a389c7c)
 ![image](https://github.com/user-attachments/assets/a872714b-b2ba-47a7-96bd-fdd0746f7816)
+
+## Lab - Using our custom terraform provider plugin in a terraform manifest script
+```
+cd ~/terraform-may-2025
+git pull
+cd Day4/custom-terraform-providers/test-file-custom-terraform-provider
+cat main.tf
+terraform plan
+ls
+terraform apply --auto-approve
+ls
+cat myfile.txt
+cat terraform.tfstate
+terraform show
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a917a884-ccb5-49d9-a5d9-ffeb5bba7608)
+![image](https://github.com/user-attachments/assets/e9a0c240-079b-40a8-8297-ced508278d84)
+![image](https://github.com/user-attachments/assets/5b202d14-230d-45df-80e7-b10fd0043fd6)
+![image](https://github.com/user-attachments/assets/1b5a2bd1-e981-4547-a81e-dcd69c25ac2f)
+![image](https://github.com/user-attachments/assets/ba968ae7-a644-440f-aa11-af3a8311589c)
+
+Try updating the main.tf file_content and try apply again
+```
+terraform apply --auto-approve
+```
+
+Once you are done with this lab exercise, you may dispose all the resources created by terraform
+```
+terraform destroy --auto-approve
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/6959de02-da1c-4187-b623-8405a2c9df1a)
