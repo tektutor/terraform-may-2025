@@ -116,6 +116,19 @@ https://pkg.go.dev/github.com/docker/docker/client
 
 
 ## Lab - Developing a custom docker terrform provider plugin using Golang
+You need to update your ~/.terraformrc file as shown below to help terraform locate the our docker provider
+<pre>
+Paste the below code in your ~/.terraformrc file
+```
+provider_installation {
+  dev_overrides {
+    "registry.terraform.io/tektutor/file" = "/home/rps/go/bin",    
+    "registry.terraform.io/tektutor/docker" = "/home/rps/go/bin",      
+  }
+  direct {}
+}  
+</pre>
+
 ```
 cd ~/terraform-may-2025
 git pull
