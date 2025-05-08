@@ -17,6 +17,7 @@ func New(version string) func() *schema.Provider {
 	    DataSourcesMap: map[string]*schema.Resource{},
 	    ResourcesMap: map[string]*schema.Resource{
 		"docker_container" : resourceDockerContainer(),
+		"docker_image" : resourceDockerImage(),
 	    },
       }
 

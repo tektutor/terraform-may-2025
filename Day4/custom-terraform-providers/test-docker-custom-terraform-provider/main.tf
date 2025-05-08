@@ -6,6 +6,10 @@ terraform {
   }
 }
 
+resource "docker_image" "nginx" {
+  image_name = "bitnami/nginx:latest"
+}
+
 resource "docker_container" "container1" {
   container_name = "c1"
   host_name      = "container_1"
