@@ -240,3 +240,14 @@ You can launch the AWX Webconsole using the url shown in the above command
 http://192.168.49.2:31225
 ```
 ![image](https://github.com/user-attachments/assets/20b63425-5071-4a42-8be9-7a2ac340aeee)
+
+Ansible Tower Login Credentials, save the login credentials in a text file to avoid typing complex command each time
+<pre>
+username - admin
+password - 
+</pre>
+
+To get the password, you to type the below command
+```
+kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" -n ansible-awx | base64 --decode; echo
+```
