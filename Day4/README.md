@@ -206,3 +206,15 @@ Expected output
 ![image](https://github.com/user-attachments/assets/867031e2-1744-4a2f-a43a-f05c624f20a5)
 ![image](https://github.com/user-attachments/assets/3401875f-0cf0-474b-9da7-4d354f016cd9)
 ![image](https://github.com/user-attachments/assets/123337a3-db3b-41a7-b0a0-8e79fd7575c7)
+
+
+Clean up the resources provisioned by Terraform
+```
+docker images | grep bitnami
+terraform destroy --auto-approve
+docker images | grep bitnami
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/26a2e88d-3d9a-42d0-998e-5d80b8d108fd)
+![image](https://github.com/user-attachments/assets/e0bbf5bf-9cb8-48a1-be0e-2e5a90074c8c)
