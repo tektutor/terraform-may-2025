@@ -103,6 +103,14 @@ terraform destroy --auto-approve
 Expected output
 ![image](https://github.com/user-attachments/assets/6959de02-da1c-4187-b623-8405a2c9df1a)
 
+## Info - Docker SDK API Reference
+<pre>
+https://pkg.go.dev/github.com/docker/docker/client  
+</pre>
+![image](https://github.com/user-attachments/assets/bcf0c7e6-c75e-4295-a386-74ca60266f1f)
+![image](https://github.com/user-attachments/assets/88aa80f3-09d8-4d21-ba30-bffd27a03504)
+
+
 ## Lab - Developing a custom docker terrform provider plugin using Golang
 ```
 cd ~/terraform-may-2025
