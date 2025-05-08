@@ -102,3 +102,23 @@ terraform destroy --auto-approve
 
 Expected output
 ![image](https://github.com/user-attachments/assets/6959de02-da1c-4187-b623-8405a2c9df1a)
+
+## Lab - Developing a custom docker terrform provider plugin using Golang
+```
+cd ~/terraform-may-2025
+git pull
+cd Day4/custom-terraform-providers/docker
+tree
+go mod init github.com/tektutor/terraform-provider-docker
+go mod tidy
+ls -l
+go build
+ls -l
+go install
+ls -l /home/rps/go/bin
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/7cd56862-231e-45f4-b4d5-471ce5091230)
+![image](https://github.com/user-attachments/assets/54177880-5fcd-4f78-b478-614ae1321db3)
+![image](https://github.com/user-attachments/assets/dd0d7c58-3272-49a4-8ce7-7bf4b7cade76)
