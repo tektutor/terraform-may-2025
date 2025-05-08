@@ -30,3 +30,36 @@ Expected output
 ![image](https://github.com/user-attachments/assets/67048628-2dc4-4c8d-8897-723a84232a2e)
 ![image](https://github.com/user-attachments/assets/409deae0-2e1a-4128-8e01-fc4757e406d2)
 ![image](https://github.com/user-attachments/assets/2c5b59c3-4833-4b1d-8b58-266d8138f487)
+
+
+## Lab - Develop your first Custom Terraform Provider Plugin in Golang
+You need to create a folder
+```
+mkdir -p /home/rps/go/bin
+touch ~/.terraformrc
+```
+Paste the below code in your ~/.terraformrc file
+```
+provider_installation {
+  dev_overrides {
+    "registry.terraform.io/tektutor/file" = "/home/rps/go/bin",    
+  }
+  direct {}
+}
+```
+
+Then you may proceed with the below instructions
+```
+cd ~/terraform-may-2025
+git pull
+cd Day4/custom-terraform-providers/file
+go mod init github.com/tektutor/terraform-provider-file
+go mod tidy
+ls -l
+go build
+ls -l
+go install
+ls -l /home/rps/go/bin
+```
+
+Expected output
