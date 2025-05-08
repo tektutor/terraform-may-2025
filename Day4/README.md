@@ -122,3 +122,53 @@ Expected output
 ![image](https://github.com/user-attachments/assets/7cd56862-231e-45f4-b4d5-471ce5091230)
 ![image](https://github.com/user-attachments/assets/54177880-5fcd-4f78-b478-614ae1321db3)
 ![image](https://github.com/user-attachments/assets/dd0d7c58-3272-49a4-8ce7-7bf4b7cade76)
+
+## Lab - Using our custom docker terraform provider plugin in Terraform automation project
+```
+cd ~/terraform-may-2025
+git pull
+cd Day4/custom-terraform-providers/test-docker-custom-terraform-provider
+terraform plan
+terraform apply
+docker ps
+terraform show
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f7efc07a-e50d-48a3-9dd2-71644238eced)
+![image](https://github.com/user-attachments/assets/9f4ed051-59a9-41cf-93cf-30e45ce88dc7)
+![image](https://github.com/user-attachments/assets/500222d5-001b-4bf5-8df7-ade3aed77ec8)
+![image](https://github.com/user-attachments/assets/6dbd423b-ebd4-4f83-bf0f-ed72e0b2b547)
+
+Let's try updating the name of the container. You need to edit the main.tf as shown below
+```
+terraform {
+  required_providers {
+    docker = {
+       source = "tektutor/docker"
+    }
+  }
+}
+
+resource "docker_container" "container1" {
+  container_name = "c1"
+  host_name      = "container_1"
+  image_name     = "tektutor/ubuntu-ansible-node:latest"
+}
+
+resource "docker_container" "container2" {
+  container_name = "c2"
+  host_name      = "container_2"
+  image_name     = "tektutor/ubuntu-ansible-node:latest"
+}
+```
+Let's apply the changes
+```
+terraform plan
+terraform apply --auto-approve
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/54737fbb-d53a-4905-ae6c-86868f0ba539)
+![image](https://github.com/user-attachments/assets/334b8f6e-8290-4ac6-8f7f-eb99140b54ae)
+![image](https://github.com/user-attachments/assets/384da50e-7ebe-4612-817e-de12be25e39c)
