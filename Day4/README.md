@@ -218,3 +218,12 @@ docker images | grep bitnami
 Expected output
 ![image](https://github.com/user-attachments/assets/26a2e88d-3d9a-42d0-998e-5d80b8d108fd)
 ![image](https://github.com/user-attachments/assets/e0bbf5bf-9cb8-48a1-be0e-2e5a90074c8c)
+
+## Lab - Starting the minikube
+```
+docker ps -a
+minikube start
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/43f30def-806c-4abe-9a9e-e31dec3a4a4d)
