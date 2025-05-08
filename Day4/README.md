@@ -109,6 +109,10 @@ https://pkg.go.dev/github.com/docker/docker/client
 </pre>
 ![image](https://github.com/user-attachments/assets/bcf0c7e6-c75e-4295-a386-74ca60266f1f)
 ![image](https://github.com/user-attachments/assets/88aa80f3-09d8-4d21-ba30-bffd27a03504)
+![image](https://github.com/user-attachments/assets/e05dae92-6d9b-4b93-8381-95ee8bc6f925)
+![image](https://github.com/user-attachments/assets/6fb4bbc3-b144-4595-823d-883fa1d7d168)
+![image](https://github.com/user-attachments/assets/9a468414-2f34-49a8-8306-49040565c988)
+![image](https://github.com/user-attachments/assets/060a9964-cb7d-4819-ad6a-407b7b80f364)
 
 
 ## Lab - Developing a custom docker terrform provider plugin using Golang
