@@ -166,9 +166,11 @@ Let's apply the changes
 ```
 terraform plan
 terraform apply --auto-approve
+terraform show
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/54737fbb-d53a-4905-ae6c-86868f0ba539)
 ![image](https://github.com/user-attachments/assets/334b8f6e-8290-4ac6-8f7f-eb99140b54ae)
 ![image](https://github.com/user-attachments/assets/384da50e-7ebe-4612-817e-de12be25e39c)
+![image](https://github.com/user-attachments/assets/fc989ce9-a21d-431e-85dc-b53be1296beb)
