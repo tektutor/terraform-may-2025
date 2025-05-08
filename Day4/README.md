@@ -239,4 +239,4 @@ You can launch the AWX Webconsole using the url shown in the above command
 ```
 http://192.168.49.2:31225
 ```
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/20b63425-5071-4a42-8be9-7a2ac340aeee)
