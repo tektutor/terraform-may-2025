@@ -167,6 +167,7 @@ Let's apply the changes
 terraform plan
 terraform apply --auto-approve
 terraform show
+terraform providers
 ```
 
 Expected output
