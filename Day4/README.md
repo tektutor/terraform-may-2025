@@ -268,3 +268,11 @@ kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" -n ans
 
 Once you login, you will get the below page
 ![image](https://github.com/user-attachments/assets/6e5b9009-cbc6-4117-9d05-64a1ec45c85a)
+
+## Lab - Creating a Project in Ansible AWX
+
+Navigate to Ansible Automation Platform on your RPS Lab machine - chrome web browser
+![image](https://github.com/user-attachments/assets/485a5eb5-82e1-48da-8bec-f24959d8bb30)
+
+On the menu that appears on the left side, Navigate to Resources --> Projects
+![image](https://github.com/user-attachments/assets/6788d7bf-2b92-4b39-a23c-49fabac26f4e)
