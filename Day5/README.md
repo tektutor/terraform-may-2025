@@ -92,5 +92,16 @@ Click "Save and Finish"
 Click "Start using Jenkins"
 ![image](https://github.com/user-attachments/assets/ca45fc35-d060-42b4-bdb8-6a502f0a03ed)
 
+## Lab - Let's create a DevOps CI/CD Pipeline in Jenkins using declarative style
+Navigate to Jenkins Dashboard from the chrome web browser on your RPS Ubuntu Lab Machine
+<pre>
+http://localhost:8080 
+</pre>
+![image](https://github.com/user-attachments/assets/d1732286-9513-4680-ba32-ec1f04f97541)
+
+Click "Create a job" in the center of the screen
+![image](https://github.com/user-attachments/assets/a01615d9-ba93-4c32-80f1-e908036a5492)
+Under the enter an itemname, type "DevOpsCICDPipeline" and select "pipeline" in select an item type
+![image](https://github.com/user-attachments/assets/1bc4108c-8a7d-466e-b32e-6c2e10f1bc7a)
 
 
