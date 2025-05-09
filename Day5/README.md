@@ -79,5 +79,11 @@ Click "Install suggested plugins"
 ![image](https://github.com/user-attachments/assets/de67d567-d536-458a-af36-92b347e21925)
 ![image](https://github.com/user-attachments/assets/9795974d-4e52-4b07-9e74-1d9eda81ca65)
 ![image](https://github.com/user-attachments/assets/de7742cf-470e-4040-9418-18666e7e670c)
+![image](https://github.com/user-attachments/assets/a60909ab-a0e8-41c4-b086-c8f0df2cb534)
+![image](https://github.com/user-attachments/assets/8b88cddc-4604-4858-9505-7679b285a167)
+![image](https://github.com/user-attachments/assets/1cd6c842-f5fd-4d43-86cf-6485cf3fbf04)
+
+We need to create a user
+
 
 
