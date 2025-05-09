@@ -3,6 +3,9 @@ terraform {
     docker = {
        source = "tektutor/docker"
     }
+    localfile = {
+       source = "tektutor/file"
+    }
   }
 }
 
@@ -14,6 +17,11 @@ resource "docker_container" "container1" {
   container_name = "c1"
   host_name      = "container_1"
   image_name     = "tektutor/ubuntu-ansible-node:latest"
+}
+
+resource "localfile" "myfile" {
+  file_name = "somefile.txt"
+  file_content= "test"
 
   provisioner "local-exec" {
     command = "ansible-playbook install-nginx-playbook.yml" 
