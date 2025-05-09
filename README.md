@@ -59,6 +59,7 @@ https://medium.com/@jegan_50867/kubernetes-3-node-cluster-using-k3s-d28b2c09e2f7
 </pre>
 
 ## References
+<pre>
 Docker commands
 https://medium.com/@jegan_50867/docker-commands-ba19387383b4
 https://www.youtube.com/watch?v=sZvla1AWodw
@@ -66,3 +67,4 @@ https://www.youtube.com/watch?v=7XpBvRA3drY
 https://medium.com/@jegan_50867/installing-ansible-tower-awx-e46d5231357d
 https://github.com/dariubs/GoBooks
 https://www.jenkins.io/doc/book/pipeline/syntax/
+</pre>
