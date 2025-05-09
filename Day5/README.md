@@ -103,5 +103,17 @@ Click "Create a job" in the center of the screen
 ![image](https://github.com/user-attachments/assets/a01615d9-ba93-4c32-80f1-e908036a5492)
 Under the enter an itemname, type "DevOpsCICDPipeline" and select "pipeline" in select an item type
 ![image](https://github.com/user-attachments/assets/1bc4108c-8a7d-466e-b32e-6c2e10f1bc7a)
+Click "Ok"
+![image](https://github.com/user-attachments/assets/2e36d1fc-435a-4906-bca0-2ab6b9ec29ef)
+
+General section, you may write "DevOps CI/CD Pipeline" under the description
+![image](https://github.com/user-attachments/assets/8a737edf-62e5-43a2-b291-9070a5350db2)
+![image](https://github.com/user-attachments/assets/6803f329-c397-4cc5-935a-06561767975d)
+
+Triggers section
+![image](https://github.com/user-attachments/assets/19ebe55b-1e47-456b-9ad6-d77d02a50cbd)
+Select "Poll SCM", under the schedule type "H/02 * * * *"
+![image](https://github.com/user-attachments/assets/445859e6-a474-443e-8310-c8047b790b8d)
+
 
 
