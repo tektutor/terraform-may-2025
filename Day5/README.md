@@ -92,5 +92,53 @@ Click "Save and Finish"
 Click "Start using Jenkins"
 ![image](https://github.com/user-attachments/assets/ca45fc35-d060-42b4-bdb8-6a502f0a03ed)
 
+## Lab - Let's create a DevOps CI/CD Pipeline in Jenkins using declarative style
+Navigate to Jenkins Dashboard from the chrome web browser on your RPS Ubuntu Lab Machine
+<pre>
+http://localhost:8080 
+</pre>
+![image](https://github.com/user-attachments/assets/d1732286-9513-4680-ba32-ec1f04f97541)
+
+Click "Create a job" in the center of the screen
+![image](https://github.com/user-attachments/assets/a01615d9-ba93-4c32-80f1-e908036a5492)
+Under the enter an itemname, type "DevOpsCICDPipeline" and select "pipeline" in select an item type
+![image](https://github.com/user-attachments/assets/1bc4108c-8a7d-466e-b32e-6c2e10f1bc7a)
+Click "Ok"
+![image](https://github.com/user-attachments/assets/2e36d1fc-435a-4906-bca0-2ab6b9ec29ef)
+
+General section, you may write "DevOps CI/CD Pipeline" under the description
+![image](https://github.com/user-attachments/assets/8a737edf-62e5-43a2-b291-9070a5350db2)
+![image](https://github.com/user-attachments/assets/6803f329-c397-4cc5-935a-06561767975d)
+
+Triggers section
+![image](https://github.com/user-attachments/assets/19ebe55b-1e47-456b-9ad6-d77d02a50cbd)
+Select "Poll SCM", under the schedule type "H/02 * * * *"
+![image](https://github.com/user-attachments/assets/445859e6-a474-443e-8310-c8047b790b8d)
+
+Pipeline section
+![image](https://github.com/user-attachments/assets/05cd34c2-6499-4e64-8e53-792f82cf0e02)
+![image](https://github.com/user-attachments/assets/895f56a8-378c-47fc-b050-0e6ee17b9dd8)
+Select "Pipeline script from SCM"
+![image](https://github.com/user-attachments/assets/a2600253-0053-4132-989f-9b43c1168673)
+Select "Git" under SCM
+![image](https://github.com/user-attachments/assets/3aa5e7d0-00d3-4a5d-bcc5-47ce17acb204)
+![image](https://github.com/user-attachments/assets/9c962bfe-d87a-4616-ade1-fa1f3fb70a16)
+Under the Repository url, paste "https://github.com/tektutor/terraform-may-2025.git"
+![image](https://github.com/user-attachments/assets/70beba3c-6805-4df5-b439-5cb6c444f374)
+Under the Branches to Build, we need to change "*/master" to "*/main" without the quotes.
+![image](https://github.com/user-attachments/assets/f0b40e4f-9722-4f71-bf94-8ed00a80f2d8)
+Script Path
+![image](https://github.com/user-attachments/assets/74d93709-f345-464f-aaa8-7a71616339ca)
+Change the Script Path to "Day5/DevOpsCICDPipeline/Jenkinsfile"
+![image](https://github.com/user-attachments/assets/a72ff659-b2ef-4616-ae26-2f6b2823d2d8)
+Click Save
+![image](https://github.com/user-attachments/assets/8111f008-b913-45fc-b741-8c657ba6eef2)
+
+Progress
+![image](https://github.com/user-attachments/assets/d11e8582-b3d3-4ff7-bfd0-d336e232647c)
+![image](https://github.com/user-attachments/assets/d157f310-fe9d-4e4e-bcf9-039d24a01037)
+Console Output
+![image](https://github.com/user-attachments/assets/ddd700ae-5fb9-40a6-a83b-196b0130e2d0)
+
 
 
