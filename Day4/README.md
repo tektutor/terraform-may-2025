@@ -1,4 +1,4 @@
-# Day 4
+![image](https://github.com/user-attachments/assets/6b3800b3-89a2-437e-91f8-8062de4bb090)# Day 4
 
 ## Lab - Terraform modules
 ```
@@ -87,7 +87,8 @@ Expected output
 ![image](https://github.com/user-attachments/assets/a917a884-ccb5-49d9-a5d9-ffeb5bba7608)
 ![image](https://github.com/user-attachments/assets/e9a0c240-079b-40a8-8297-ced508278d84)
 ![image](https://github.com/user-attachments/assets/5b202d14-230d-45df-80e7-b10fd0043fd6)
-![image](https://github.com/user-attachments/assets/1b5a2bd1-e981-4547-a81e-dcd69c25ac2f)
+![image](https://github.com/user-attachments/assets/1b![image](https://github.com/user-attachments/assets/81e66e0d-ee62-416b-82a9-1a15750713b1)
+5a2bd1-e981-4547-a81e-dcd69c25ac2f)
 ![image](https://github.com/user-attachments/assets/ba968ae7-a644-440f-aa11-af3a8311589c)
 
 Try updating the main.tf file_content and try apply again
@@ -219,6 +220,20 @@ Expected output
 ![image](https://github.com/user-attachments/assets/26a2e88d-3d9a-42d0-998e-5d80b8d108fd)
 ![image](https://github.com/user-attachments/assets/e0bbf5bf-9cb8-48a1-be0e-2e5a90074c8c)
 
+## Info - Ansible Automation Platform
+<pre>
+- was also called as Ansible Tower
+- it is developed on top the AWX (open source)
+- AWX is developed on top Ansible core (open source)
+- unlike Ansible core, Ansible automation platform supports webconsole, user management, etc.,
+- this is a Red Hat Enterprise product with world-wide support
+- functionally AWX and Ansible Automation Platform are one and same
+- it is not possible develop Ansible Playbook within AWX or Ansible Automation Platform
+- hence, we still need Ansible core to develop playbooks and test them before we push it to GitHub or any version control
+- the existing Ansible Playbooks we can execute via Ansible Automation Platform
+- can be installed as a stand-alone application on any Linux Distributions or we can install inside Kubernetes or Openshift
+</pre>
+
 ## Lab - Starting the minikube ( Launch Ansible Tower )
 ```
 docker ps -a
@@ -254,3 +269,152 @@ kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" -n ans
 
 Once you login, you will get the below page
 ![image](https://github.com/user-attachments/assets/6e5b9009-cbc6-4117-9d05-64a1ec45c85a)
+
+## Lab - Creating a Project in Ansible AWX
+
+Navigate to Ansible Automation Platform on your RPS Lab machine - chrome web browser
+![image](https://github.com/user-attachments/assets/485a5eb5-82e1-48da-8bec-f24959d8bb30)
+
+On the menu that appears on the left side, Navigate to Resources --> Projects
+![image](https://github.com/user-attachments/assets/6788d7bf-2b92-4b39-a23c-49fabac26f4e)
+
+Click "Add"
+![image](https://github.com/user-attachments/assets/834056ce-1f09-4ac3-8d2b-73259fbdba95)
+<pre>
+Under the Name, type "TekTutor Training Repository"
+Under the Source Code Type, select "Git"
+Under the Source Control url, type "https://github.com/tektutor/terraform-may-2025.git"
+Under the Source Control Branch/Tag/Commit, type "main"
+Under the Options, enable the check box that says "Update Revision on Launch"
+</pre>
+![image](https://github.com/user-attachments/assets/049d38d8-58f6-4ec0-9ec5-0f3e663e546f)
+Click "Save"
+![image](https://github.com/user-attachments/assets/07eec3fb-9e2a-4618-ad67-90faaa64a811)
+![image](https://github.com/user-attachments/assets/1268b2a1-e6dd-4855-8b6f-ba11ea944a94)
+Click "Successful"
+![image](https://github.com/user-attachments/assets/15c2a342-c054-4608-bf30-dcbc889d28b1)
+![image](https://github.com/user-attachments/assets/2a722f64-09bd-4d14-8b1b-753ae5b80609)
+![image](https://github.com/user-attachments/assets/07b48cd4-25fb-4238-b7c6-097fa7ba7276)
+
+## Lab - Creating Inventory in Ansible Automation Platform(AWX)
+
+Navigate to Ansible Automation Platform(AWX)
+![image](https://github.com/user-attachments/assets/5b24830d-be9e-45d2-87dd-cce1164d6ed8)
+
+Click Resources --> Inventories
+![image](https://github.com/user-attachments/assets/56d74187-79ac-4db8-9994-fdfd7ee1f6b9)
+Click Add
+Select the first option "Add Inventory
+![image](https://github.com/user-attachments/assets/d2bb9ea8-d2a6-4673-9441-2a9f84a6bbe1)
+![image](https://github.com/user-attachments/assets/a4bf5394-64e6-43f9-95c7-205847ce8d4d)
+Under the Name, type "Docker Inventory"
+![image](https://github.com/user-attachments/assets/84564e2d-20a2-4456-866e-f637f55f7785)
+Click "Save"
+![image](https://github.com/user-attachments/assets/bca311c6-40c3-4948-af77-7bbd082f23a3)
+Click the Tab named "Hosts" within the Inventory you saved just now
+![image](https://github.com/user-attachments/assets/1aae0b65-d039-4c04-ab22-14b69ca20787)
+Click "Add"
+![image](https://github.com/user-attachments/assets/3bac4ab6-8d34-47e8-af65-0b486427a9df)
+![image](https://github.com/user-attachments/assets/63488e47-0ac4-4044-915a-f1f7f34ba8ef)
+![image](https://github.com/user-attachments/assets/d1014742-6a15-42a0-bde7-1a0670bb5dd8)
+Click "Save"
+![image](https://github.com/user-attachments/assets/e28e910a-2561-49aa-9146-4e23d1d2b8e6)
+![image](https://github.com/user-attachments/assets/3613c7ca-d9fd-4680-b6df-25700f4d08d0)
+click Add to create other ansible nodes on the similar fashion
+![image](https://github.com/user-attachments/assets/96ac35a4-9c25-422f-b48b-2996b8c92eb7)
+![image](https://github.com/user-attachments/assets/1f00bb0d-222b-452b-a429-a5d6769c413a)
+Click "Save"
+![image](https://github.com/user-attachments/assets/8b33b848-a681-4639-9cfb-a90a88db5f0c)
+click Add to create other ansible nodes on the similar fashion
+![image](https://github.com/user-attachments/assets/a90d7c1c-e96f-43c6-8993-e415e328e6b7)
+Click "Add"
+![image](https://github.com/user-attachments/assets/126fba92-08f4-4b34-b600-67ebfa73569d)
+![image](https://github.com/user-attachments/assets/6cde45f6-b205-4c0b-a994-60f3b177ff56)
+Click "Save"
+![image](https://github.com/user-attachments/assets/cbbae3de-7dd8-466d-9be8-d03eeffe2875)
+
+Repeat the procedure to add "Rocky2"
+![image](https://github.com/user-attachments/assets/d28d5766-b9a3-4123-b0b0-54f5380102fa)
+![image](https://github.com/user-attachments/assets/2ac1aa8c-6d43-4fba-ba24-df9d6c219a12)
+![image](https://github.com/user-attachments/assets/277a7572-241a-4e61-ab49-649994ea8b38)
+
+To verify if all the hosts(ansible nodes) added to the inventory are reachable to Ansible Tower, Click on your inventory and move to the Hosts tab
+![image](https://github.com/user-attachments/assets/fa8711d3-fa9c-4d8b-a5a1-26135aa67581)
+Click "Run command"
+![image](https://github.com/user-attachments/assets/ae3f6fdd-ee6c-4db0-82d2-ffc8d06cdea2)
+Under the Module, choose "ping"
+![image](https://github.com/user-attachments/assets/12d94a11-883b-4ae7-b65b-f1fef3b01012)
+![image](https://github.com/user-attachments/assets/e0426c71-e47f-4e20-90ec-2cc96213122e)
+Click "Next"
+![image](https://github.com/user-attachments/assets/aa126029-827c-4301-81e1-9f9ad8148738)
+Click "Next"
+![image](https://github.com/user-attachments/assets/6f5079b4-970d-4fed-a084-a33975b81a65)
+Select "RPS Private Key" we saved
+Click "Next"
+![image](https://github.com/user-attachments/assets/ed473b7d-6b76-44c0-bb29-0e9b73346128)
+Click "Launch"
+![image](https://github.com/user-attachments/assets/c935c5e5-89c9-4753-96ca-856d6abfac55)
+![image](https://github.com/user-attachments/assets/f2e374f1-fdec-4657-aef7-39b48f898aac)
+![image](https://github.com/user-attachments/assets/ea5cd484-b463-4f11-8d3d-8a3772876d1f)
+
+
+## Lab - Creating Credentials to store the Private key 
+Navigate to Ansible Tower Dashboard
+![image](https://github.com/user-attachments/assets/840ef26e-02fa-42c4-a85d-1c6f71b1438e)
+
+Click Resources --> Credentials
+![image](https://github.com/user-attachments/assets/443e9275-0979-4d2d-b1ac-6a70fd1320e6)
+Click "Add"
+![image](https://github.com/user-attachments/assets/c0177e6a-705a-4e38-be1e-f8a6c09c440b)
+![image](https://github.com/user-attachments/assets/079b2d1e-c5b3-45e7-98d2-61ded1632742)
+Select "Machine" Credential Type
+![image](https://github.com/user-attachments/assets/9c098188-6564-4268-b4fc-bea03cd36288)
+Open your RPS Cloud Machine Terminal, type "cat /home/rps/.ssh/id_ed25519"
+![image](https://github.com/user-attachments/assets/748b606d-230c-41bc-b114-ebed912d3635)
+Copy the private key including the Begin and End as shown below
+![image](https://github.com/user-attachments/assets/d91fee7a-abf6-4225-adf5-4d60b114de25)
+Paste the private key you copied under the "SSH Private Key" field (Remove extra space)
+![image](https://github.com/user-attachments/assets/161f70d2-bb49-432e-9458-15dec389187f)
+Scroll down to save
+![image](https://github.com/user-attachments/assets/41afb417-6511-488c-bdae-ec409898d78b)
+Click Save
+![image](https://github.com/user-attachments/assets/6f2fc74b-c7df-41e2-ab9e-234dcbf82b3e)
+
+## Lab - Creating Job Template to invoke a playbook from Ansible Tower
+Navigate to Ansible Tower Dashboard
+![image](https://github.com/user-attachments/assets/840ef26e-02fa-42c4-a85d-1c6f71b1438e)
+
+Click "Resources->Templates"
+![image](https://github.com/user-attachments/assets/2c897342-2cae-4845-a9c4-bb656d568ab3)
+Click "Add"
+![image](https://github.com/user-attachments/assets/6301eb00-facb-4c20-be4a-a2bcab7ea404)
+Select "Add Job Template"
+![image](https://github.com/user-attachments/assets/11555410-df41-41fa-a24d-403875793289)
+<pre>
+Under the Name, type "Install nginx playbook"
+Click Search in Inventory and select "Docker Inventory" that we created
+</pre>
+![image](https://github.com/user-attachments/assets/8ce42600-5455-489d-b695-b7136e983e1d)
+![image](https://github.com/user-attachments/assets/3fb317a0-1fe1-4b08-ad45-7f36c9c3a497)
+
+Click Search in Project and Select "TekTutor Training Repository"
+![image](https://github.com/user-attachments/assets/91c9c263-e8fc-4be6-95c5-29454ec09da3)
+![image](https://github.com/user-attachments/assets/8e599117-aa57-4aa4-b2ff-32f5c69d60c7)
+![image](https://github.com/user-attachments/assets/2b99d682-b587-4e55-8448-3ac9324eec2e)
+Under the Playbook, select "Day2/ansible/after-refactoring/install-nginx-playbook.yml"
+![image](https://github.com/user-attachments/assets/56fb6f80-eb5b-4891-96e6-ea4c59aae900)
+Under Credential, click search and select "RPS private key file"
+![image](https://github.com/user-attachments/assets/4d1dbed2-ae97-4ebd-81ee-ef26a09ee280)
+![image](https://github.com/user-attachments/assets/d80bf622-f0c3-4abb-a482-fbd3c3f2560b)
+![image](https://github.com/user-attachments/assets/e225328d-b62b-4890-b755-dd7409c79418)
+Scroll down and click "Save"
+![image](https://github.com/user-attachments/assets/6b2557ed-04b5-41c0-82b2-c1831b9b7251)
+
+
+To run the playbook, click "Launch" Button
+![image](https://github.com/user-attachments/assets/ddfa57b5-d794-418a-b451-e4ee9973fdb7)
+![image](https://github.com/user-attachments/assets/f9c492f8-ca4e-48bb-b456-3ba3440f7032)
+![image](https://github.com/user-attachments/assets/97087026-4eb8-42ee-9e8f-444fc05e7171)
+![image](https://github.com/user-attachments/assets/5f38d212-86d0-4107-afc1-098fd3f99f8f)
+![image](https://github.com/user-attachments/assets/a3c7742c-29f1-424a-bfa2-c26a83f1ca52)
+![image](https://github.com/user-attachments/assets/5a9c66fc-1664-4b2d-8f94-8f5b676b0c81)
