@@ -115,5 +115,25 @@ Triggers section
 Select "Poll SCM", under the schedule type "H/02 * * * *"
 ![image](https://github.com/user-attachments/assets/445859e6-a474-443e-8310-c8047b790b8d)
 
+Pipeline section
+![image](https://github.com/user-attachments/assets/05cd34c2-6499-4e64-8e53-792f82cf0e02)
+![image](https://github.com/user-attachments/assets/895f56a8-378c-47fc-b050-0e6ee17b9dd8)
+Select "Pipeline script from SCM"
+![image](https://github.com/user-attachments/assets/a2600253-0053-4132-989f-9b43c1168673)
+Select "Git" under SCM
+![image](https://github.com/user-attachments/assets/3aa5e7d0-00d3-4a5d-bcc5-47ce17acb204)
+![image](https://github.com/user-attachments/assets/9c962bfe-d87a-4616-ade1-fa1f3fb70a16)
+Under the Repository url, paste "https://github.com/tektutor/terraform-may-2025.git"
+![image](https://github.com/user-attachments/assets/70beba3c-6805-4df5-b439-5cb6c444f374)
+Under the Branches to Build, we need to change "*/master" to "*/main" without the quotes.
+![image](https://github.com/user-attachments/assets/f0b40e4f-9722-4f71-bf94-8ed00a80f2d8)
+Script Path
+![image](https://github.com/user-attachments/assets/74d93709-f345-464f-aaa8-7a71616339ca)
+Change the Script Path to "Day5/DevOpsCICDPipeline/Jenkinsfile"
+![image](https://github.com/user-attachments/assets/a72ff659-b2ef-4616-ae26-2f6b2823d2d8)
+Click Save
+![image](https://github.com/user-attachments/assets/8111f008-b913-45fc-b741-8c657ba6eef2)
+
+
 
 
