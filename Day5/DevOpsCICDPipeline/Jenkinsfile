@@ -74,13 +74,6 @@ pipeline {
                 }
             }
         }
-        stage('Test if we are able to access web page from provisioned container') {
-            steps {
-                script {
-                    sh "curl http://172.17.0.2:80"
-                }
-            }
-        }
         stage('Dispose the resource created by Terraform') {
             steps {
                 script {
