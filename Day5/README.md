@@ -134,6 +134,11 @@ Change the Script Path to "Day5/DevOpsCICDPipeline/Jenkinsfile"
 Click Save
 ![image](https://github.com/user-attachments/assets/8111f008-b913-45fc-b741-8c657ba6eef2)
 
+Progress
+![image](https://github.com/user-attachments/assets/d11e8582-b3d3-4ff7-bfd0-d336e232647c)
+![image](https://github.com/user-attachments/assets/d157f310-fe9d-4e4e-bcf9-039d24a01037)
+Console Output
+![image](https://github.com/user-attachments/assets/ddd700ae-5fb9-40a6-a83b-196b0130e2d0)
 
 
 
