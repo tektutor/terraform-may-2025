@@ -30,11 +30,11 @@
 ## Jenkins Overview
 <pre>
 - very first Continuous Integration Build server 
-- Josuke Kawaguchi is the person who developed Jenkins
+- Kohsuke Kawaguchi is the person who developed Jenkins
 - initially it was called Hudson, it was developed in Java while he was working for Sun Microsystems
 - many like minded colleagues started contributed and started using Hudson for automating Build within Sun Microsystems
 - meanwhile, Oracle acquired Sun Microsystems, and Oracle had some proposals to make Hudson a commercial product
-- the team that was developing Hudson didn't like the idea of Oracle making the producat a commercial one, hence most of the team members including Josuke Kawaguchi had quit Oracle and Josuke founded a company called Cloudbees forking the Hudson branch into a new branch called Jenkins
+- the team that was developing Hudson didn't like the idea of Oracle making the producat a commercial one, hence most of the team members including Kohsuke Kawaguchi had quit Oracle and Kohsuke Kawaguchi founded a company called Cloudbees forking the Hudson branch into a new branch called Jenkins
 - The baseline code for Jenkins comes from Hudson, even today in some of the logs you could see the Hudson word appearing
 - the team stayed back in Oracle continues to develop/maintain the Hudson product, but Jenkins is the most popular CI Build server even today
 - inspired by Jenkins many other CI Builds servers started coming up which includes TeamCity, Bamboo, Circle City, TFS, etc.,
