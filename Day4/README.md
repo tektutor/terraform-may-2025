@@ -219,6 +219,20 @@ Expected output
 ![image](https://github.com/user-attachments/assets/26a2e88d-3d9a-42d0-998e-5d80b8d108fd)
 ![image](https://github.com/user-attachments/assets/e0bbf5bf-9cb8-48a1-be0e-2e5a90074c8c)
 
+## Info - Ansible Automation Platform
+<pre>
+- was also called as Ansible Tower
+- it is developed on top the AWX (open source)
+- AWX is developed on top Ansible core (open source)
+- unlike Ansible core, Ansible automation platform supports webconsole, user management, etc.,
+- this is a Red Hat Enterprise product with world-wide support
+- functionally AWX and Ansible Automation Platform are one and same
+- it is not possible develop Ansible Playbook within AWX or Ansible Automation Platform
+- hence, we still need Ansible core to develop playbooks and test them before we push it to GitHub or any version control
+- the existing Ansible Playbooks we can execute via Ansible Automation Platform
+- can be installed as a stand-alone application on any Linux Distributions or we can install inside Kubernetes or Openshift
+</pre>
+
 ## Lab - Starting the minikube ( Launch Ansible Tower )
 ```
 docker ps -a
