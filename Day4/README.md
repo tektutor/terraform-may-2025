@@ -349,4 +349,22 @@ Click "Next"
 ![image](https://github.com/user-attachments/assets/aa126029-827c-4301-81e1-9f9ad8148738)
 Click "Next"
 
+## Lab - Creating Credentials to store the Private key 
+Navigate to Ansible Tower Dashboard
+![image](https://github.com/user-attachments/assets/840ef26e-02fa-42c4-a85d-1c6f71b1438e)
+
+Click Resources --> Credentials
+![image](https://github.com/user-attachments/assets/443e9275-0979-4d2d-b1ac-6a70fd1320e6)
+Click "Add"
+![image](https://github.com/user-attachments/assets/c0177e6a-705a-4e38-be1e-f8a6c09c440b)
+![image](https://github.com/user-attachments/assets/079b2d1e-c5b3-45e7-98d2-61ded1632742)
+Select "Machine" Credential Type
+![image](https://github.com/user-attachments/assets/9c098188-6564-4268-b4fc-bea03cd36288)
+Open your RPS Cloud Machine Terminal, type "cat /home/rps/.ssh/id_ed25519"
+![image](https://github.com/user-attachments/assets/748b606d-230c-41bc-b114-ebed912d3635)
+Copy the private key including the Begin and End as shown below
+![image](https://github.com/user-attachments/assets/d91fee7a-abf6-4225-adf5-4d60b114de25)
+
+
+
 
