@@ -279,11 +279,13 @@ On the menu that appears on the left side, Navigate to Resources --> Projects
 
 Click "Add"
 ![image](https://github.com/user-attachments/assets/834056ce-1f09-4ac3-8d2b-73259fbdba95)
-Under the Name, type "TekTutor Training Repositoyr"
+<pre>
+Under the Name, type "TekTutor Training Repository"
 Under the Source Code Type, select "Git"
 Under the Source Control url, type "https://github.com/tektutor/terraform-may-2025.git"
 Under the Source Control Branch/Tag/Commit, type "main"
 Under the Options, enable the check box that says "Update Revision on Launch"
+</pre>
 ![image](https://github.com/user-attachments/assets/049d38d8-58f6-4ec0-9ec5-0f3e663e546f)
 Click "Save"
 ![image](https://github.com/user-attachments/assets/07eec3fb-9e2a-4618-ad67-90faaa64a811)
