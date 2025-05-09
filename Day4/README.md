@@ -295,3 +295,41 @@ Click "Successful"
 ![image](https://github.com/user-attachments/assets/2a722f64-09bd-4d14-8b1b-753ae5b80609)
 ![image](https://github.com/user-attachments/assets/07b48cd4-25fb-4238-b7c6-097fa7ba7276)
 
+## Lab - Creating Inventory in Ansible Automation Platform(AWX)
+
+Navigate to Ansible Automation Platform(AWX)
+![image](https://github.com/user-attachments/assets/5b24830d-be9e-45d2-87dd-cce1164d6ed8)
+
+Click Resources --> Inventories
+![image](https://github.com/user-attachments/assets/56d74187-79ac-4db8-9994-fdfd7ee1f6b9)
+Click Add
+Select the first option "Add Inventory
+![image](https://github.com/user-attachments/assets/d2bb9ea8-d2a6-4673-9441-2a9f84a6bbe1)
+![image](https://github.com/user-attachments/assets/a4bf5394-64e6-43f9-95c7-205847ce8d4d)
+Under the Name, type "Docker Inventory"
+![image](https://github.com/user-attachments/assets/84564e2d-20a2-4456-866e-f637f55f7785)
+Click "Save"
+![image](https://github.com/user-attachments/assets/bca311c6-40c3-4948-af77-7bbd082f23a3)
+Click the Tab named "Hosts" within the Inventory you saved just now
+![image](https://github.com/user-attachments/assets/1aae0b65-d039-4c04-ab22-14b69ca20787)
+Click "Add"
+![image](https://github.com/user-attachments/assets/3bac4ab6-8d34-47e8-af65-0b486427a9df)
+![image](https://github.com/user-attachments/assets/63488e47-0ac4-4044-915a-f1f7f34ba8ef)
+![image](https://github.com/user-attachments/assets/d1014742-6a15-42a0-bde7-1a0670bb5dd8)
+Click "Save"
+![image](https://github.com/user-attachments/assets/e28e910a-2561-49aa-9146-4e23d1d2b8e6)
+![image](https://github.com/user-attachments/assets/3613c7ca-d9fd-4680-b6df-25700f4d08d0)
+click Add to create other ansible nodes on the similar fashion
+![image](https://github.com/user-attachments/assets/96ac35a4-9c25-422f-b48b-2996b8c92eb7)
+![image](https://github.com/user-attachments/assets/1f00bb0d-222b-452b-a429-a5d6769c413a)
+Click "Save"
+![image](https://github.com/user-attachments/assets/81e66e0d-ee62-416b-82a9-1a15750713b1)
+click Add to create other ansible nodes on the similar fashion
+![image](https://github.com/user-attachments/assets/a90d7c1c-e96f-43c6-8993-e415e328e6b7)
+Click "Add"
+![image](https://github.com/user-attachments/assets/126fba92-08f4-4b34-b600-67ebfa73569d)
+![image](https://github.com/user-attachments/assets/6cde45f6-b205-4c0b-a994-60f3b177ff56)
+Click "Save"
+![image](https://github.com/user-attachments/assets/cbbae3de-7dd8-466d-9be8-d03eeffe2875)
+
+
