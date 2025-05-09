@@ -364,7 +364,12 @@ Open your RPS Cloud Machine Terminal, type "cat /home/rps/.ssh/id_ed25519"
 ![image](https://github.com/user-attachments/assets/748b606d-230c-41bc-b114-ebed912d3635)
 Copy the private key including the Begin and End as shown below
 ![image](https://github.com/user-attachments/assets/d91fee7a-abf6-4225-adf5-4d60b114de25)
-
+Paste the private key you copied under the "SSH Private Key" field (Remove extra space)
+![image](https://github.com/user-attachments/assets/161f70d2-bb49-432e-9458-15dec389187f)
+Scroll down to save
+![image](https://github.com/user-attachments/assets/41afb417-6511-488c-bdae-ec409898d78b)
+Click Save
+![image](https://github.com/user-attachments/assets/6f2fc74b-c7df-41e2-ab9e-234dcbf82b3e)
 
 
 
