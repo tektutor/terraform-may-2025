@@ -77,5 +77,7 @@ Click "Continue"
 ![image](https://github.com/user-attachments/assets/8d345541-015a-4668-b729-d3d2e33817ca)
 Click "Install suggested plugins"
 ![image](https://github.com/user-attachments/assets/de67d567-d536-458a-af36-92b347e21925)
+![image](https://github.com/user-attachments/assets/9795974d-4e52-4b07-9e74-1d9eda81ca65)
+![image](https://github.com/user-attachments/assets/de7742cf-470e-4040-9418-18666e7e670c)
 
 
