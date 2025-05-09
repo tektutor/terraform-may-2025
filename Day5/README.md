@@ -85,6 +85,12 @@ Click "Install suggested plugins"
 
 We need to create a user
 ![image](https://github.com/user-attachments/assets/e2381636-05c2-498d-b4f8-b30cc1f8f8f9)
+Click "Save and Continue"
+![image](https://github.com/user-attachments/assets/c3aefdd5-4f54-405d-ae83-494e88198e78)
+Click "Save and Finish"
+![image](https://github.com/user-attachments/assets/6d651028-7d7f-44c7-9b57-55381f87e322)
+Click "Start using Jenkins"
+![image](https://github.com/user-attachments/assets/ca45fc35-d060-42b4-bdb8-6a502f0a03ed)
 
 
 
