@@ -288,4 +288,6 @@ Under the Options, enable the check box that says "Update Revision on Launch"
 Click "Save"
 ![image](https://github.com/user-attachments/assets/07eec3fb-9e2a-4618-ad67-90faaa64a811)
 ![image](https://github.com/user-attachments/assets/1268b2a1-e6dd-4855-8b6f-ba11ea944a94)
+Click "Successful"
+![image](https://github.com/user-attachments/assets/15c2a342-c054-4608-bf30-dcbc889d28b1)
 
