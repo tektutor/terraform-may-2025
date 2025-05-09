@@ -286,5 +286,5 @@ Under the Source Control Branch/Tag/Commit, type "main"
 Under the Options, enable the check box that says "Update Revision on Launch"
 ![image](https://github.com/user-attachments/assets/049d38d8-58f6-4ec0-9ec5-0f3e663e546f)
 Click "Save"
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/07eec3fb-9e2a-4618-ad67-90faaa64a811)
 
