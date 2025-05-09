@@ -1,5 +1,11 @@
 # Day 5
 
+## Training Feedback
+https://survey.zohopublic.com/zs/uNEr8W
+
+## Post-test 
+You can find the excel-sheet in the training machine
+
 ## Info - DevOps Overview
 <pre>
 - automating end-2-end 
