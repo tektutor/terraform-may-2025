@@ -63,7 +63,7 @@ pipeline {
 		}
 	    }
 	}
-        stage("Invoke Terraform Automation Script - Test File and Docker Provider") {
+        stage("Invoke Terraform Automation Script - Test File Provider") {
             steps {
                 script {
 		  dir("Day5/DevOpsCICDPipeline/custom-terraform-providers/test-file-custom-terraform-provider") {
@@ -74,6 +74,17 @@ pipeline {
                 }
             }
         }
+	stage("Invoke Terraform Automation Script - Test Docker Provider") {
+            steps {
+                script {
+		  dir("Day5/DevOpsCICDPipeline/custom-terraform-providers/test-docker-custom-terraform-provider") {
+                    sh "terraform plan"
+		    sh "terraform apply --auto-approve"
+		    sh "terraform show"
+		  }
+                }
+            }
+        }    
         stage('Dispose the resource created by Terraform') {
             steps {
                 script {
