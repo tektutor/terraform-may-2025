@@ -1,4 +1,4 @@
-# Day 4
+![image](https://github.com/user-attachments/assets/6b3800b3-89a2-437e-91f8-8062de4bb090)# Day 4
 
 ## Lab - Terraform modules
 ```
@@ -380,5 +380,32 @@ Scroll down to save
 Click Save
 ![image](https://github.com/user-attachments/assets/6f2fc74b-c7df-41e2-ab9e-234dcbf82b3e)
 
+## Lab - Creating Job Template to invoke a playbook from Ansible Tower
+Navigate to Ansible Tower Dashboard
+![image](https://github.com/user-attachments/assets/840ef26e-02fa-42c4-a85d-1c6f71b1438e)
 
+Click "Resources->Templates"
+![image](https://github.com/user-attachments/assets/2c897342-2cae-4845-a9c4-bb656d568ab3)
+Click "Add"
+![image](https://github.com/user-attachments/assets/6301eb00-facb-4c20-be4a-a2bcab7ea404)
+Select "Add Job Template"
+![image](https://github.com/user-attachments/assets/11555410-df41-41fa-a24d-403875793289)
+<pre>
+Under the Name, type "Install nginx playbook"
+Click Search in Inventory and select "Docker Inventory" that we created
+</pre>
+![image](https://github.com/user-attachments/assets/8ce42600-5455-489d-b695-b7136e983e1d)
+![image](https://github.com/user-attachments/assets/3fb317a0-1fe1-4b08-ad45-7f36c9c3a497)
 
+Click Search in Project and Select "TekTutor Training Repository"
+![image](https://github.com/user-attachments/assets/91c9c263-e8fc-4be6-95c5-29454ec09da3)
+![image](https://github.com/user-attachments/assets/8e599117-aa57-4aa4-b2ff-32f5c69d60c7)
+![image](https://github.com/user-attachments/assets/2b99d682-b587-4e55-8448-3ac9324eec2e)
+Under the Playbook, select "Day2/ansible/after-refactoring/install-nginx-playbook.yml"
+![image](https://github.com/user-attachments/assets/56fb6f80-eb5b-4891-96e6-ea4c59aae900)
+Under Credential, click search and select "RPS private key file"
+![image](https://github.com/user-attachments/assets/4d1dbed2-ae97-4ebd-81ee-ef26a09ee280)
+![image](https://github.com/user-attachments/assets/d80bf622-f0c3-4abb-a482-fbd3c3f2560b)
+![image](https://github.com/user-attachments/assets/e225328d-b62b-4890-b755-dd7409c79418)
+Scroll down and click "Save"
+![image](https://github.com/user-attachments/assets/6b2557ed-04b5-41c0-82b2-c1831b9b7251)
