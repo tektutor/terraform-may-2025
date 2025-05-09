@@ -84,6 +84,7 @@ Click "Install suggested plugins"
 ![image](https://github.com/user-attachments/assets/1cd6c842-f5fd-4d43-86cf-6485cf3fbf04)
 
 We need to create a user
+![image](https://github.com/user-attachments/assets/e2381636-05c2-498d-b4f8-b30cc1f8f8f9)
 
 
 
