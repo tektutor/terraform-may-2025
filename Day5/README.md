@@ -73,4 +73,9 @@ Copy the initial admin password using a new tab in your web browser
 
 You may then paste the initial admin password
 ![image](https://github.com/user-attachments/assets/83b231e4-cd6d-44f4-b22f-c112f79b8763)
+Click "Continue"
+![image](https://github.com/user-attachments/assets/8d345541-015a-4668-b729-d3d2e33817ca)
+Click "Install suggested plugins"
+![image](https://github.com/user-attachments/assets/de67d567-d536-458a-af36-92b347e21925)
+
 
