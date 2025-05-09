@@ -409,3 +409,12 @@ Under Credential, click search and select "RPS private key file"
 ![image](https://github.com/user-attachments/assets/e225328d-b62b-4890-b755-dd7409c79418)
 Scroll down and click "Save"
 ![image](https://github.com/user-attachments/assets/6b2557ed-04b5-41c0-82b2-c1831b9b7251)
+
+
+To run the playbook, click "Launch" Button
+![image](https://github.com/user-attachments/assets/ddfa57b5-d794-418a-b451-e4ee9973fdb7)
+![image](https://github.com/user-attachments/assets/f9c492f8-ca4e-48bb-b456-3ba3440f7032)
+![image](https://github.com/user-attachments/assets/97087026-4eb8-42ee-9e8f-444fc05e7171)
+![image](https://github.com/user-attachments/assets/5f38d212-86d0-4107-afc1-098fd3f99f8f)
+![image](https://github.com/user-attachments/assets/a3c7742c-29f1-424a-bfa2-c26a83f1ca52)
+![image](https://github.com/user-attachments/assets/5a9c66fc-1664-4b2d-8f94-8f5b676b0c81)
