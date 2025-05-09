@@ -68,3 +68,9 @@ http://localhost:8080
 </pre>
 ![image](https://github.com/user-attachments/assets/0d116ec1-0c42-42a7-b0c6-2db69d0dd92b)
                                                                                                       
+Copy the initial admin password using a new tab in your web browser
+![image](https://github.com/user-attachments/assets/64337c3d-d87e-4c89-9448-f681709a6206)
+
+You may then paste the initial admin password
+![image](https://github.com/user-attachments/assets/83b231e4-cd6d-44f4-b22f-c112f79b8763)
+
