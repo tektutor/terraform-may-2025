@@ -49,3 +49,23 @@
 - is the matured level, where the QA certified builds are automatically deployed to live production environment
 - in some companies, instead of making it live in production, they are deployed into pre-prod environment for further testing before it can be made live in production
 </pre>
+
+## Lab - Launching Jenkins from your Linux Terminial
+```
+cd ~/Downloads
+ls -l jenkins.war
+
+java -jar ./jenkins.war
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/8a00b093-0881-4fc6-8ad1-04a4077c4040)
+![image](https://github.com/user-attachments/assets/e29ce98b-edbd-498d-b0c0-219c464e84da)
+
+You can the Jenkins Dashboard from RPS Cloud Machine (chrome web browser )
+<pre>
+http://localhost:8080  
+</pre>
+![image](https://github.com/user-attachments/assets/0d116ec1-0c42-42a7-b0c6-2db69d0dd92b)
+![image](https://github.com/user-attachments/assets/28338c55-8c5f-4a87-9879-3f0522cfe4e2)
+                                                                                                      
