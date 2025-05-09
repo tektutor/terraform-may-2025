@@ -332,4 +332,7 @@ Click "Add"
 Click "Save"
 ![image](https://github.com/user-attachments/assets/cbbae3de-7dd8-466d-9be8-d03eeffe2875)
 
+Repeat the procedure to add "Rocky2"
+![image](https://github.com/user-attachments/assets/d28d5766-b9a3-4123-b0b0-54f5380102fa)
+
 
