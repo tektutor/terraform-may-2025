@@ -67,5 +67,4 @@ You can the Jenkins Dashboard from RPS Cloud Machine (chrome web browser )
 http://localhost:8080  
 </pre>
 ![image](https://github.com/user-attachments/assets/0d116ec1-0c42-42a7-b0c6-2db69d0dd92b)
-![image](https://github.com/user-attachments/assets/28338c55-8c5f-4a87-9879-3f0522cfe4e2)
                                                                                                       
