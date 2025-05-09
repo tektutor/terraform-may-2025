@@ -87,7 +87,8 @@ Expected output
 ![image](https://github.com/user-attachments/assets/a917a884-ccb5-49d9-a5d9-ffeb5bba7608)
 ![image](https://github.com/user-attachments/assets/e9a0c240-079b-40a8-8297-ced508278d84)
 ![image](https://github.com/user-attachments/assets/5b202d14-230d-45df-80e7-b10fd0043fd6)
-![image](https://github.com/user-attachments/assets/1b5a2bd1-e981-4547-a81e-dcd69c25ac2f)
+![image](https://github.com/user-attachments/assets/1b![image](https://github.com/user-attachments/assets/81e66e0d-ee62-416b-82a9-1a15750713b1)
+5a2bd1-e981-4547-a81e-dcd69c25ac2f)
 ![image](https://github.com/user-attachments/assets/ba968ae7-a644-440f-aa11-af3a8311589c)
 
 Try updating the main.tf file_content and try apply again
@@ -335,6 +336,6 @@ Click "Save"
 Repeat the procedure to add "Rocky2"
 ![image](https://github.com/user-attachments/assets/d28d5766-b9a3-4123-b0b0-54f5380102fa)
 ![image](https://github.com/user-attachments/assets/2ac1aa8c-6d43-4fba-ba24-df9d6c219a12)
-![image](https://github.com/user-attachments/assets/f9a76254-919d-4688-a2b8-6ee49f4e4a81)
+![image](https://github.com/user-attachments/assets/277a7572-241a-4e61-ab49-649994ea8b38)
 
 
