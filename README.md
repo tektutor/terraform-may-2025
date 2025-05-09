@@ -68,3 +68,8 @@ https://medium.com/@jegan_50867/installing-ansible-tower-awx-e46d5231357d
 https://github.com/dariubs/GoBooks
 https://www.jenkins.io/doc/book/pipeline/syntax/
 </pre>
+
+## Download your training material here
+<pre>
+https://drive.google.com/file/d/1KbBzYgJXM17SHFCr3X2XE9e5n5uXaEoa/view?usp=sharing
+</pre>
