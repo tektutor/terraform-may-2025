@@ -1,0 +1,10 @@
+- name: Check if nginx server is already running in Rocky 
+  shell: curl http://localhost:80
+  register: output
+  ignore_errors: yes
+
+- debug: var=output
+
+- name: Start the nginx server if it is not running already in Rocky
+  when: output.rc != 0
+  shell: nginx
