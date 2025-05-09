@@ -338,4 +338,15 @@ Repeat the procedure to add "Rocky2"
 ![image](https://github.com/user-attachments/assets/2ac1aa8c-6d43-4fba-ba24-df9d6c219a12)
 ![image](https://github.com/user-attachments/assets/277a7572-241a-4e61-ab49-649994ea8b38)
 
+To verify if all the hosts(ansible nodes) added to the inventory are reachable to Ansible Tower, Click on your inventory and move to the Hosts tab
+![image](https://github.com/user-attachments/assets/fa8711d3-fa9c-4d8b-a5a1-26135aa67581)
+Click "Run command"
+![image](https://github.com/user-attachments/assets/ae3f6fdd-ee6c-4db0-82d2-ffc8d06cdea2)
+Under the Module, choose "ping"
+![image](https://github.com/user-attachments/assets/12d94a11-883b-4ae7-b65b-f1fef3b01012)
+![image](https://github.com/user-attachments/assets/e0426c71-e47f-4e20-90ec-2cc96213122e)
+Click "Next"
+![image](https://github.com/user-attachments/assets/aa126029-827c-4301-81e1-9f9ad8148738)
+Click "Next"
+
 
