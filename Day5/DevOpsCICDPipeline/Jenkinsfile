@@ -1,0 +1,96 @@
+#!/usr/bin/env groovy
+
+pipeline {
+    agent {
+        label 'built-in'
+    }
+    stages {
+        stage('Build Custom Docker Ubuntu Image') {
+            steps {
+                script {
+		    dir("Day5/DevOpsCICDPipeline/CustomDockerImages/ubuntu") {
+		         sh "cp ~/.ssh/id_ed25519.pub authorized_keys"
+		         sh "docker build -t tektutor/ubuntu-ansible-node:latest ."
+			 sh "rm authorized_keys"
+			 sh "docker images | grep ubuntu-ansible"
+		    }
+                }
+            }
+        }
+        stage('Build Custom Docker Rocky Image') {
+            steps {
+                script {
+		    dir("Day5/DevOpsCICDPipeline/CustomDockerImages/rocky") {
+		         sh "cp ~/.ssh/id_ed25519.pub authorized_keys"
+		         sh "docker build -t tektutor/rocky-ansible-node:latest ."
+			 sh "rm authorized_keys"
+			 sh "docker images | grep rocky-ansible"
+		    }
+                }
+            }
+        }	    
+//	stage("Manual approval") {
+//		steps {
+//			timeout( time: 1, unit: "DAYS") {
+//			   input message: 'Are we good to perform infrastructure automation ?', ok: 'Yes'
+//			}
+//			echo "About to invoke Terraform ..."
+//		}
+//	}
+	stage("Build Custom Terraform File Provider and Install it") {
+	    steps {
+                script {
+		  dir("Day5/DevOpsCICDPipeline/custom-terraform-providers/file") {
+		     sh "rm -f go.mod go.sum"
+	             sh "go mod init github.com/tektutor/terraform-provider-file"
+		     sh "go mod tidy"
+		     sh "go build"
+		     sh "go install"
+	  	  }
+		}
+	    }
+	}
+	stage("Build Custom Terraform Docker Provider and Install it") {
+	    steps {
+                script {
+		  dir("Day5/DevOpsCICDPipeline/custom-terraform-providers/docker") {
+		     sh "rm -f go.mod go.sum"
+	             sh "go mod init github.com/tektutor/terraform-provider-docker"
+		     sh "go mod tidy"
+		     sh "go build"
+		     sh "go install"
+	  	  }
+		}
+	    }
+	}
+        stage("Invoke Terraform Automation Script - Test File and Docker Provider") {
+            steps {
+                script {
+		  dir("Day5/DevOpsCICDPipeline/custom-terraform-providers/test-file-custom-terraform-provider") {
+                    sh "terraform plan"
+		    sh "terraform apply --auto-approve"
+		    sh "terraform show"
+		  }
+                }
+            }
+        }
+        stage('Test if we are able to access web page from provisioned container') {
+            steps {
+                script {
+                    sh "curl http://172.17.0.2:80"
+                }
+            }
+        }
+        stage('Dispose the resource created by Terraform') {
+            steps {
+                script {
+		  dir("Day5/DevOpsCICDPipeline/custom-terraform-providers/test-docker-custom-terraform-provider") {
+                    sh "terraform destroy --auto-approve"
+		    sh "rm -f terraform.tfstate*"
+		    sh "docker ps -a"
+		  }
+                }
+            }
+        }
+   }
+}
