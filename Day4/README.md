@@ -323,7 +323,7 @@ click Add to create other ansible nodes on the similar fashion
 ![image](https://github.com/user-attachments/assets/96ac35a4-9c25-422f-b48b-2996b8c92eb7)
 ![image](https://github.com/user-attachments/assets/1f00bb0d-222b-452b-a429-a5d6769c413a)
 Click "Save"
-![image](https://github.com/user-attachments/assets/81e66e0d-ee62-416b-82a9-1a15750713b1)
+![image](https://github.com/user-attachments/assets/8b33b848-a681-4639-9cfb-a90a88db5f0c)
 click Add to create other ansible nodes on the similar fashion
 ![image](https://github.com/user-attachments/assets/a90d7c1c-e96f-43c6-8993-e415e328e6b7)
 Click "Add"
