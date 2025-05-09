@@ -348,6 +348,15 @@ Under the Module, choose "ping"
 Click "Next"
 ![image](https://github.com/user-attachments/assets/aa126029-827c-4301-81e1-9f9ad8148738)
 Click "Next"
+![image](https://github.com/user-attachments/assets/6f5079b4-970d-4fed-a084-a33975b81a65)
+Select "RPS Private Key" we saved
+Click "Next"
+![image](https://github.com/user-attachments/assets/ed473b7d-6b76-44c0-bb29-0e9b73346128)
+Click "Launch"
+![image](https://github.com/user-attachments/assets/c935c5e5-89c9-4753-96ca-856d6abfac55)
+![image](https://github.com/user-attachments/assets/f2e374f1-fdec-4657-aef7-39b48f898aac)
+![image](https://github.com/user-attachments/assets/ea5cd484-b463-4f11-8d3d-8a3772876d1f)
+
 
 ## Lab - Creating Credentials to store the Private key 
 Navigate to Ansible Tower Dashboard
